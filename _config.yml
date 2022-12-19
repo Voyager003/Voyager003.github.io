@@ -1,6 +1,6 @@
 # main text of home
-title: ROME Wiki & Blog
-bio: A Person who love Salt bread.
+title: Rome
+bio:
 
 # twitter summary info
 description: A blog about technology and stuff related
@@ -8,7 +8,7 @@ description: A blog about technology and stuff related
 # if it's an external image, update below for true
 # better with square images
 external-image: false
-picture: assets/images/profile.jpeg
+picture: assets/images/profile.png
 
 # your site color theme, true for dark theme, 
 # false to light theme, auto to switch with system.
@@ -21,7 +21,6 @@ resume-external: true
 resume-url: https://google.com/?q=my+resume
 
 url: https://voyager003.github.io
-# your url: https://USERNAME.github.io
 
 permalink: /:title/
 
@@ -40,12 +39,12 @@ github: https://github.com/Voyager003
 email: miraclex000@gmail.com
 
 authors:
-  johndoe:
+  ROME:
     name: Rim wongi
     bio: Hi, I'm ROME, Backend-Developer
     external-image: false
-    picture: assets/images/profile.jpeg
-    twitter: refreshment0
+    picture: assets/images/profile.png
+    twitter: @refreshment0
 
 
 # do you want a larger site? change the option below
