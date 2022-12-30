@@ -53,9 +53,9 @@ google_analytics:
 google_adsense:
   client: SAMPLE-VALUE
 
-blame: "https://github.com/johngrib/johngrib.github.io/blame/master/_wiki"
-edit: "https://github.com/johngrib/johngrib.github.io/edit/master/_wiki"
-issue: "https://github.com/johngrib/johngrib.github.io/issues/new"
+blame: "https://github.com/voyager003/voyager003.github.io/blame/master/_wiki"
+edit: "https://github.com/voyager003/voyager003.github.io/edit/master/_wiki"
+issue: "https://github.com/voyager003/voyager003.github.io/issues/new"
 
 timezone: "Asia/Seoul"
 
