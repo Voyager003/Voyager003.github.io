@@ -79,7 +79,7 @@ function lexicalOrderingBy(property) {
 }
 
 /**
- * tag 하나의 정보 파일을 만든다.
+ * tag 하나의 정보 파일을 만든다.:
  * 각 태그 하나는 하나의 json 파일을 갖게 된다.
  * 예를 들어 math 라는 태그가 있다면 ./data/tag/math.json 파일이 만들어진다.
  * json 파일의 내용은 fileName과 collection으로 구성된다.
