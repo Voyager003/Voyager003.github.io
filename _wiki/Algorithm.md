@@ -1,15 +1,17 @@
 ---
 layout  : category
-title   : 알고리즘
+title   : 
 summary : 
-date    : 2023-01-08 16:54:13 +0900
-updated : 2023-01-08 16:57:17 +0900
-tag     : algorithm
-resource: A0/511ECE-C786-4CFF-A21D-B63A26FC0991
+date    : 2023-01-08 22:26:07 +0900
+updated : 2023-01-08 22:29:52 +0900
+tag     : algorithm 
+resource: F3/36EE8B-737E-42D4-B772-5209CD89B3ED
 toc     : true
 public  : true
-parent  : [[index]]
+parent  : [[root-index]] 
 latex   : false
 ---
 * TOC
-{:toc} 
+{:toc}
+
+# 
