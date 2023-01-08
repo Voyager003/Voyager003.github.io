@@ -1,17 +1,15 @@
 ---
-layout  : wiki
-title   : Algorithm
+layout  : category
+title   : 알고리즘
 summary : 
-date    : 2023-01-07 16:02:50 +0900
-updated : 2023-01-07 16:04:54 +0900
-tag     : 
-resource: FB/5D0222-933D-4C2F-9DF8-BE2BF843C3CC
+date    : 2023-01-08 16:54:13 +0900
+updated : 2023-01-08 16:57:17 +0900
+tag     : algorithm
+resource: A0/511ECE-C786-4CFF-A21D-B63A26FC0991
 toc     : true
 public  : true
-parent  : [[index]] 
+parent  : [[index]]
 latex   : false
 ---
 * TOC
-{:toc}
-
-# 
+{:toc} 
