@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://voyager003.github.io/sitemap.xml
+Sitemap: https://johngrib.github.io/sitemap.xml

@@ -1,10 +1,9 @@
 {
  "type": "wiki",
- "title": "Wiki",
+ "title": "ROOT",
  "url": "/wiki/index",
- "updated": "2023-01-07 16:04:54 +0900",
- "resource": "4E/37B85C-87D8-42A2-9E53-DCB8DC7EAEAA",
+ "updated": "2021-07-25 18:00:13 +0900",
  "children": [
-  "Algorithm"
+  "how-to"
  ]
 }
