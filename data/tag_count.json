@@ -4,6 +4,10 @@
   "size": 2
  },
  {
+  "name": "bigO",
+  "size": 1
+ },
+ {
   "name": "wiki",
   "size": 1
  }
