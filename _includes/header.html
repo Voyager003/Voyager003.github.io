@@ -2,7 +2,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <!-- 참고: https://jekyllrb.com/docs/liquid/filters/ -->
+    <title>{% if page.title %}{{ page.title | slugify: "default" }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 
     <meta name="description" content="{{ page.summary }}">
     <meta name="google-site-verification" content="xD2UvBTOH6xxBi9MseahHz4Nt9u2vYZbgY2wVo7Bdyc" />
@@ -14,7 +15,7 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="{{ page.title }}">
     <meta property="og:description" content="{{ page.summary }}">
-    <meta property="og:image" content="{{ site.url }}/resource/Profile.png">
+    <meta property="og:image" content="{{ site.url }}/resource/johngrib.png">
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 
     <meta name="twitter:card" content="summary" />
@@ -23,14 +24,22 @@
     <meta name="twitter:title" content="{{ page.title }}" />
     <meta name="twitter:description" content="{{ page.summary }}" />
 
-    <link rel="apple-touch-icon" sizes="180x180"      href="/resource/icon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="/resource/icon/android-icon-512x512.png">
+    <link rel="apple-touch-icon" sizes="57x57"        href="/resource/icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60"        href="/resource/icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72"        href="/resource/icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76"        href="/resource/icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114"      href="/resource/icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120"      href="/resource/icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144"      href="/resource/icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152"      href="/resource/icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180"      href="/resource/icon/apple-icon-180x180.png">
     <link rel="icon" type="image/png" sizes="192x192" href="/resource/icon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32"   href="/resource/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96"   href="/resource/icon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16"   href="/resource/icon/favicon-16x16.png">
     <link rel="manifest" href="/resource/icon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/resource/Profile.png">
+    <meta name="msapplication-TileImage" content="/resource/icon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
 {% if site.google_analytics.ua and site.google_analytics.encrypted_ua %}
@@ -95,50 +104,13 @@
         <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
     </div>
     <div>
-        <a class="site-title-right" href="/about/">About</a>
+        <a class="site-title-right" href="/about/">me</a>
     </div>
     <div>
-        <a id="random-button" class="site-title-right" onClick="goToRandomDocument()">Random</a>
+        <a id="random-button" class="site-title-right">random</a>
     </div>
     <div>
-        <a class="site-title-right" href="/wiki/index/">Index</a>
+        <a class="site-title-right" href="/wiki/index/">index</a>
     </div>
 </header>
-<script>
-function goToRandomDocument() {
-    fetch(`/data/total-document-url-list.json`)
-        .then(response => response.json())
-        .then(function(data) {
-            const num = getRandomInt(0, data.length);
-            window.location.href = data[num];
-        })
-        .catch(function(error) {
-            console.log(error);
-        });
-}
-
-function getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min)) + min; //최댓값은 제외, 최솟값은 포함
-}
-
-;(function(){
-    var isCtrl = false;
-
-    document.onkeyup=function(e){
-        if (e.which == 17) {
-            isCtrl = false;
-        }
-    }
-
-    document.onkeydown=function(e){
-        if(e.which == 17) {
-            isCtrl = true;
-        }
-        if(e.which == 82 && isCtrl == true) {
-            goToRandomDocument();
-        }
-    }
-})();
-</script>
+<script async src="/js/shortcut.js"></script>

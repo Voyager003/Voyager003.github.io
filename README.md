@@ -4,5 +4,3 @@
 
 - https://github.com/johngrib/johngrib-jekyll-skeleton
 - https://johngrib.github.io/
-
-
