@@ -3,13 +3,14 @@ layout  : wiki
 title   : 복잡도 
 summary : 
 date    : 2023-01-09 15:34:38 +0900
-updated : 2023-01-09 20:43:46 +0900
+updated : 2023-01-09 22:52:46 +0900
 tag     : algorithm bigO
 resource: 5F/CC3F64-BC9E-440B-890E-D5B99B3F0728
 toc     : true
 public  : true
 parent  : [[/Algorithm]]
 latex   : false
+comment : true
 ---
 * TOC
 {:toc}
@@ -68,11 +69,11 @@ latex   : false
   - 알고리즘 효율성은 값이 클수록(그래프가 위로 향할수록) 비효율적임을 의미한다.
   
 - O(입력)
-    - 입력 n에 따라 결정되는 시간 복잡도 함수
-    - O(1), O(log n), O(n), O(n log n), O(n^2), O($2^n$), O(n!) 등으로 표기한다.
-    - 입력 n 의 크기에 따라 기하급수적으로 시간 복잡도가 늘어날 수 있다
-    - O(1) < O(log n) < O(n) < O(nlog n) < O(n^2) < O(2^n) < O(n!)순서로 성능이 저하된다.
-    - 이 때, log n은2 - log_2 n를 뜻한다.
+    -입력 n에 따라 결정되는 시간 복잡도 함수
+    -O(1), O(log n), O(n), O(n log n), O(n^2), O($2^n$), O(n!) 등으로 표기한다.
+    -입력 n 의 크기에 따라 기하급수적으로 시간 복잡도가 늘어날 수 있다
+    -O(1) < O(log n) < O(n) < O(nlog n) < O(n^2) < O(2^n) < O(n!)순서로 성능이 저하된다.
+    -이 때 log n은2 - log_2 n를 뜻한다.
 ---
 
 ## 참고자료
