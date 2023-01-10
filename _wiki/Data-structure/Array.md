@@ -3,7 +3,7 @@ layout  : wiki
 title   : Array(배열)
 summary : 
 date    : 2023-01-10 09:47:30 +0900
-updated : 2023-01-10 16:13:20 +0900
+updated : 2023-01-10 19:06:30 +0900
 tag     : Array bigO java
 resource: F1/091EF2-3CD4-4051-B86E-8E6D2FCB1590
 toc     : true
@@ -30,50 +30,49 @@ latex   : false
 
 ## Java에서 Array
 
-
-1. 기본 문법 
+### 기본 문법
 
 Java는 기본 문법으로 Array를 지원한다.
-    
-> int [] x = {length};
-    
-- Parameter
-- length : 새 Array의 길이
-    
-- Return : Array 객체
-    
-- 예시 
-  - int [] ex1 = {1,2,3,4,5};
-  - System.out.println(ex1[0]);   // 1
 
+```java
+int [] x = {length};
+int [] ex1 = {1,2,3,4,5};
+System.out.println(ex1[0]); // 1
+```
 
-  
-2. java.util.Arrays
+### java.util.Arrays
 
 Java는 Array를 보다 쉽게 다루기 위한 Class를 제공한다.
-> import java.util.Arrays;
-> 
-> System.out.println(Arrays.toString(ex1)); 
-- 1.에서 선언한 int형 Array를 String으로 변환한다. 
+
+```java
+import java.util.Arrays;
+System.out.println(Arrays.toString(ex1)); 
+```
+- 기본 문법에서 선언한 int형 Array를 String으로 변환한다. 
+
+### List와 ArrayList
+
+- java.util의 Interface List<E>
+```java
+List <Integer> list1 = new ArrayList<Integer>();
+```
+List는 Interface로 모든 method가 추상 메서드인 경우를 의미한다.
+
+List라는 Interface 안에 ArrayList 클래스가 있다. (도형 - 정사각형의 관계라고 비유할 수 있다.)
+
+List로 선언된 변수는 필요에 따라 다음과 같이 다른 List의 클래스를 쓸 수 있는 **구현상의 유연성을 제공**한다.
 
 
+```java
+List <Integer> list1 = new ArrayList<Integer>();
+list1 = new LinkedList<Integer>();
+```
 
-
-3. List와 ArrayList
-
-- 3.1 java.util의 Interface List<E>
-> List <Integer > list1 = new ArrayList<Integer >();
-
-- List는 Interface로 모든 method가 추상 메서드인 경우를 의미한다. 
-- List라는 Interface 안에 ArrayList 클래스가 있다. (도형 - 정사각형의 관계라고 비유할 수 있다.)
-- List로 선언된 변수는 필요에 따라 다음과 같이 다른 List의 클래스를 쓸 수 있는 **구현상의 유연성을 제공**한다.
-  - List <Integer> list1 = new ArrayList <Integer> ();
-  - list1 = new LinkedList<Integer>();
-
-
-- 3.2 java.util.ArayList<E>
-> ArrayList <Integer > = new ArrayList<Integer > ();
-- ArrayList는 Interface인 List와 달리 Class이다.
+- java.util.ArayList<E>
+```java
+> ArrayList <Integer> = new ArrayList<Integer>();
+```
+ArrayList는 Interface인 List와 달리 Class이다.
 
  요약하면 ArrayList는 가변 길이의 배열 자료구조를 다룰 수 있는 기능을 제공하며, List 인터페이스와 ArrayList 두 가지 모두 같은 결과를 도출하지만 
 List를 이용해 ArrayList를 생성하는 것은 코드의 유연성에서 효과를 볼 수 있다.  
@@ -87,7 +86,6 @@ List를 이용해 ArrayList를 생성하는 것은 코드의 유연성에서 효
 접근은 Array 내에서 n번 째 index에 해당하는 값을 찾아내는 연산이다.
 Array의 접근은 **O(1)** 의 시간 복잡도를 갖는다. 찾고자 하는 값이 몇 번째 index에 있는지 알고 있따면 빠른 검색 속도를 갖는다. Array의 첫 번째 변수에는 시작
 주소값이 저장되고, A[n]의 값을 찾아가기 위해 시작주소값에서 단순 사칙연산이 수행되기 때문이다.
-
 
 
 - 탐색 : contains()
