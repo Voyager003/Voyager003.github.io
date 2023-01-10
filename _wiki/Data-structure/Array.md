@@ -3,7 +3,7 @@ layout  : wiki
 title   : Array(배열)
 summary : 
 date    : 2023-01-10 09:47:30 +0900
-updated : 2023-01-10 15:58:35 +0900
+updated : 2023-01-10 16:13:20 +0900
 tag     : Array bigO java
 resource: F1/091EF2-3CD4-4051-B86E-8E6D2FCB1590
 toc     : true
@@ -82,26 +82,30 @@ List를 이용해 ArrayList를 생성하는 것은 코드의 유연성에서 효
 
 ## Array의 시간 복잡도
 
-1. 접근 : get()
+- 접근 : get()
 
 접근은 Array 내에서 n번 째 index에 해당하는 값을 찾아내는 연산이다.
 Array의 접근은 **O(1)** 의 시간 복잡도를 갖는다. 찾고자 하는 값이 몇 번째 index에 있는지 알고 있따면 빠른 검색 속도를 갖는다. Array의 첫 번째 변수에는 시작
 주소값이 저장되고, A[n]의 값을 찾아가기 위해 시작주소값에서 단순 사칙연산이 수행되기 때문이다.
 
-2. 탐색 : contains()
+
+
+- 탐색 : contains()
 
 Array의 탐색은 **순차 탐색**이다. index를 알지 못할 때 원하는 값을 찾기 위해 Array를 배열을 모두 확인해야 한다.
 
 ![Image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FebR7Gv%2FbtqUWtaBdb1%2FPsZJhqmDd2BUy8b9OpJfw1%2Fimg.jpg)
 
-위에서 A[3]의 값을 찾기위해서는 A[0]부터 순서대로 A[3]까지 순서대로 탐색한다. 즉 **O(N)** 의 시간 복잡도를 가진다.
+위에서 A[3]의 값을 찾기위해서는 A[0]부터 순서대로 A[3]까지 순서대로 탐색한다. 즉 **O(n)** 의 시간 복잡도를 가진다.
 
-3. 삽입 및 삭제 : add(), remove()
+
+
+- 삽입 및 삭제 : add(), remove()
 
 ![imgae](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FctbBif%2FbtqU0xXor35%2Ftv2mfnmBKKakoWTN1FokYk%2Fimg.jpg)
 
 Array에 빈 공간이 있다는 것을 전제로, A[6]에 5라는 값을 삽입하거나 삭제하고 싶을 때, 해당 index를 알고 있다면 O(1)의 시간 복잡도를 가지지만, 해당 index를 
-탐색해야 한다면 탐색의 시간복잡도인 O(n)에 해당한다.
+탐색해야 한다면 탐색의 시간복잡도인 **O(n)** 에 해당한다.
 
 ---
 
