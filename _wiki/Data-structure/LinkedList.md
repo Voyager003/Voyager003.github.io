@@ -16,9 +16,10 @@ latex   : false
 {:toc}
 
 ## LinkedList
+![image](https://media.geeksforgeeks.org/wp-content/uploads/20220816144425/LLdrawio.png)
 - Data를 감싼 node를 pointer로 연결하여 관리하는 자료구조이다.
 - [[Array]]와 동일하게 elemnt가 일렬로 나열되어 있는 **선형 자료구조**이다.
-- node(노드) : Data 저장 단위로 Data 값과 pointer로 구성
+- node(노드) : Data 저장 단위로 Data 값과 pointer(next)로 구성
 - pointer(포인터) : 각 node 안에서 다음 혹은 이전의 node와 연결 정보(Memory 주소)를 가지고 있는 공간
 
 ---
@@ -203,9 +204,19 @@ data 공간을 미리 할당(정적)하는 Array와 달리 data 공간을 미리
 
 ## 다양한 구조의 LinkedList
 - Singly-Linkedlist(단일 연결 리스트) : 상단의 예
+ 
+
 - Doubly-Linkedlist(이중 연결 리스트)
-- Multiply-LinkedList(다중 연결 리스트) 
+![alt](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Doubly-linked-list.svg/610px-Doubly-linked-list.svg.png)
+
+다음 node를 가르키는 next에 이전 node(backwars 혹은 prev)를 추가한 구조이다. 
+ 
+
 - Circular-Linkedlist(원형 연결 리스트)
+
+![alt](https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Circularly-linked-list.svg/350px-Circularly-linked-list.svg.png)
+
+마지막 pointer가 첫 node(head)를 가르키는 구조이다.
 
 ---
 
@@ -213,3 +224,6 @@ data 공간을 미리 할당(정적)하는 Array와 달리 data 공간을 미리
 - https://www.youtube.com/watch?v=DzGnME1jIwY&ab_channel=%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD
 - https://en.wikipedia.org/wiki/Linked_list
 - https://opentutorials.org/module/1335/8821
+- https://www.geeksforgeeks.org/what-is-linked-list/
+- https://en.wikipedia.org/wiki/Doubly_linked_list
+- 
