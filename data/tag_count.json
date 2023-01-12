@@ -9,10 +9,18 @@
  },
  {
   "name": "bigO",
+  "size": 3
+ },
+ {
+  "name": "git",
   "size": 2
  },
  {
   "name": "java",
+  "size": 2
+ },
+ {
+  "name": "linkedlist",
   "size": 1
  },
  {

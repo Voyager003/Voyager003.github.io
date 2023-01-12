@@ -6,5 +6,7 @@
  "url": "/wiki/Data-Structure",
  "updated": "2023-01-10 13:37:13 +0900",
  "resource": "15/DF5FF4-D84D-4ECA-B591-A9797B63DB16",
- "children": []
+ "children": [
+  "Data-structure/LinkedList"
+ ]
 }
