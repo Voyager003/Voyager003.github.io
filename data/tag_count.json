@@ -9,7 +9,7 @@
  },
  {
   "name": "bigO",
-  "size": 3
+  "size": 4
  },
  {
   "name": "git",
@@ -17,10 +17,14 @@
  },
  {
   "name": "java",
-  "size": 2
+  "size": 3
  },
  {
   "name": "linkedlist",
+  "size": 1
+ },
+ {
+  "name": "queue",
   "size": 1
  },
  {

@@ -3,7 +3,7 @@ layout  : wiki
 title   : Wiki
 summary : 
 date    : 2023-01-09 15:24:31 +0900
-updated : 2023-01-11 23:26:52 +0900
+updated : 2023-01-13 15:12:46 +0900
 tag     : wiki
 resource: 38/1839B7-F38A-4961-B680-EEA4A250632E
 toc     : true
@@ -18,6 +18,7 @@ latex   : false
 ## [[Data-Structure]]
 * [[/Data-structure/Array]]
 * [[/Data-structure/LinkedList]]
+* [[/Data-structure/Queue]]
 
 ## [[git]]
 * [[/git/how-to-git]]

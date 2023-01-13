@@ -18,7 +18,7 @@ latex   : false
 ## LinkedList
 ![image](https://media.geeksforgeeks.org/wp-content/uploads/20220816144425/LLdrawio.png)
 - Data를 감싼 node를 pointer로 연결하여 관리하는 자료구조이다.
-- [[Array]]와 동일하게 elemnt가 일렬로 나열되어 있는 **선형 자료구조**이다.
+- Array와 동일하게 elemnt가 일렬로 나열되어 있는 **선형 자료구조**이다.
 - node(노드) : Data 저장 단위로 Data 값과 pointer(next)로 구성
 - pointer(포인터) : 각 node 안에서 다음 혹은 이전의 node와 연결 정보(Memory 주소)를 가지고 있는 공간
 
