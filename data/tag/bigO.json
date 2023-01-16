@@ -2,5 +2,6 @@
  "Algorithm/time-complexity",
  "Data-structure/Array",
  "Data-structure/LinkedList",
- "Data-structure/Queue"
+ "Data-structure/Queue",
+ "Data-structure/Stack"
 ]
