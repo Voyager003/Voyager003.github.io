@@ -1,7 +1,7 @@
 [
  {
   "name": "algorithm",
-  "size": 2
+  "size": 3
  },
  {
   "name": "Array",
@@ -17,7 +17,7 @@
  },
  {
   "name": "java",
-  "size": 4
+  "size": 5
  },
  {
   "name": "linkedlist",
@@ -25,6 +25,10 @@
  },
  {
   "name": "queue",
+  "size": 1
+ },
+ {
+  "name": "sorting-algorithm",
   "size": 1
  },
  {
