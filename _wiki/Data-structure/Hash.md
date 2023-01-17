@@ -54,7 +54,7 @@ public class HashEx1 {
     }
 }
 ```
-각 slot에 String value를 담은 Array(Slot[])을 담도록 했다. 
+각 slot에 String value를 담은 Array(Slot[])를 담도록 했다. 
 
 
 - Hash function 추가
@@ -114,7 +114,7 @@ public String getData(String key) {
         }
     }
 ```
-key를 넣게되면 address를 hashFunc로 가져오게 하고, 해당 address에 null이 아니라면(Slot이 있는 경우)
+key를 넣게되면 address를 hashFunction으로 가져오게 하고, 해당 address에 null이 아니라면(Slot이 있는 경우)
 객체가 없다면(Slot이 없는 경우) null을 return하도록 한다.
 
 - main 메서드에서 실행
@@ -153,14 +153,14 @@ hs.getData("Rome"); // 789
 
 예시를 살펴보자.
 
-각 key에 data를 저장하고 Rome의 data를 조회했을 때, 기댓값은 123이지만 789라는 data값을 얻게 되었다. 이는 divisino method를 통해 key값의
+각 key에 data를 저장하고 Rome의 data를 조회했을 때, 기댓값은 123이지만 789라는 data값을 얻게 되었다. 이는 division method를 통해 key값의
 첫 글자(위의 경우는 R)를 기준으로 slot에 address값을 넣었기 때문이다.
 
 이처럼 서로 다른 키(key)가 같은 해시(hash)가 되는 경우를 해시 충돌이라고 하는데 이를 해결하기 위한 몇 가지 알고리즘을 살펴보자.
 
 - Chaining
 
-![alt](https://user-images.githubusercontent.com/84179578/159212644-fd16d299-1fd5-452f-914f-f001a2a66589.png)
+![alt](https://user-images.githubusercontent.com/84179578/159256197-a652991c-0890-4288-a88b-d01a7326e557.gif)
 
 Open Hashing(개방 해싱) 방법 중 하나로 Hash table 저장공간 외의 공간을 활용하는 방법으로, Collision이 일어나면 LinkedList를 사용해 LinkedList로
 data를 투가로 뒤에 연결시켜 저장하는 방법이다. 
@@ -236,12 +236,13 @@ hs.saveData("RiodeJaneiro", "789");
 hs.getData("Rome"); // 123
 ```
 
-- Linear Probing
+- Linear Probing 
 
 ![alt](https://user-images.githubusercontent.com/84179578/159255840-1d9b9e50-0430-45e3-a6d4-541d902903c7.gif)
 
-Close Hashing(폐쇄 해싱)의 방법 중 하나로 Hash table 저장공간 안에서 충돌 문제를 해결하는 방법으로, Collisiono 발생 시 
-해당 Hash address의 다음 address부터 맨 처음 나오는 빈 공간에 저장하는 방법이다. 
+Open Addressing(개방 주소 지정) 방법 중 하나인 Linear Probing은 Close Hashing(폐쇄 해싱)의 하나로
+Hash table 저장공간 안에서 충돌 문제를 해결하는 방법으로, Collision 발생 시 해당 Hash address의 다음 address부터 
+맨 처음 나오는 빈 공간에 저장하는 방법이다. 
 
 ```java
 public class HashEx3 {
@@ -329,6 +330,16 @@ hs.getData("Rome"); // 123
 else 구문에서 key에 해당하는 address가 가장 마지막 slot일 경우, this.hashTable[address + 1] 에 해당하는 배열은 없기 때문에,
 예외 케이스에서도 동작하도록 currAddress 는 address만 대입했다.
 
+이러한 linear probing 방법은 사용하면 data들이 특정 위치에만 밀집하는 clustering 문제가 발생할 수 있어 n^2를 건너뛰어 빈 공간(Slot)을 찾아가는 
+quadratic probing을 사용하기도 한다.
+
+
+- 해시 버킷 동적 확장(Resize)
+
+Hash Bucket의 개수가 적다면 메모리 사용을 아낄 수 있지만 해시 충돌로 인해 성능 상 손실이 발생한다.
+그래서 HashMap은 key-value 쌍 데이터 개수가 일정 개수 이상이 되면 해시 버킷의 개수를 두 배로 늘린다. 
+이렇게 늘리면 Hash Collision으로 인한 성능 손실 문제를 어느 정도 해결할 수 있다.
+Hash Bucket을 두 배로 확장하는 임계점은 현재 데이터 개수가 해시 버킷의 개수의 75%가 될 때이다. 이 0.75라는 수는 load factor라고 한다.
 
 ---
 
@@ -337,7 +348,8 @@ else 구문에서 key에 해당하는 address가 가장 마지막 slot일 경우
 Collision이 없는 일반적인 경우 시간 복잡도는 **O(1)** 이며, 최악(Collision이 모두 발생)하는 경우 시간 복잡도는 **O(n)** 이 된다.
 Hash table의 경우 일반적인 경우를 기대하고 작성한다.
 
-Collision이 많아 질수록 탐색에 필요한 Time Complexity가 O(1)에서 O(n)에 가까워지기 때문에, hash function을  
+Collision이 많아 질수록 탐색에 필요한 Time Complexity가 O(1)에서 O(n)에 가까워지기 때문에, 상황에 따라 상단의 예와 같은 Hash function 및 방법을
+ 이용하여 Hash table 성능 향상을 가져올 수 있다.
 
 ---
 
