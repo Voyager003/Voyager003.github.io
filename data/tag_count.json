@@ -16,8 +16,12 @@
   "size": 2
  },
  {
+  "name": "hash",
+  "size": 1
+ },
+ {
   "name": "java",
-  "size": 5
+  "size": 6
  },
  {
   "name": "linkedlist",
