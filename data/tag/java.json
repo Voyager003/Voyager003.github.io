@@ -4,5 +4,6 @@
  "Data-structure/Hash",
  "Data-structure/LinkedList",
  "Data-structure/Queue",
- "Data-structure/Stack"
+ "Data-structure/Stack",
+ "java/hash-map"
 ]

@@ -1,5 +1,4 @@
 [
- "/wiki/[Data-Structure",
  "/wiki/Algorithm",
  "/wiki/Algorithm/Bubble-sorting",
  "/wiki/Algorithm/time-complexity",
@@ -14,5 +13,6 @@
  "/wiki/git/git-init",
  "/wiki/git/how-to-git",
  "/wiki/index",
- "/wiki/Java"
+ "/wiki/Java",
+ "/wiki/java/hash-map"
 ]
