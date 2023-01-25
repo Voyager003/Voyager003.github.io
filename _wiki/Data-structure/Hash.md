@@ -353,7 +353,7 @@ Collision이 많아 질수록 탐색에 필요한 Time Complexity가 O(1)에서 
 
 ---
 
-## 참조자료
+## 참고자료
 
 - https://en.wikipedia.org/wiki/Hash_table - Hashtable 이미지
 - https://www.fun-coding.org/Chapter09-hashtable-live.html#gsc.tab=0 - 용어 설명

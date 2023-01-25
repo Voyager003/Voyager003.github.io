@@ -86,7 +86,7 @@ data가 삽입될 때 맨 뒤의 data가 삽입되는 연산만 수행되기 때
 
 ---
 
-## 참조자료
+## 참고자료
 - https://en.wikipedia.org/wiki/Queue_(abstract_data_type)
 - https://www.coursera.org/lecture/data-structures/queues-EShpq
 - https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html

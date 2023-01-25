@@ -13,7 +13,7 @@
  },
  {
   "name": "git",
-  "size": 2
+  "size": 1
  },
  {
   "name": "hash",
@@ -21,7 +21,7 @@
  },
  {
   "name": "java",
-  "size": 7
+  "size": 8
  },
  {
   "name": "linkedlist",
@@ -37,6 +37,10 @@
  },
  {
   "name": "stack",
+  "size": 1
+ },
+ {
+  "name": "tree",
   "size": 1
  },
  {
