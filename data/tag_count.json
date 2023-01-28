@@ -32,6 +32,10 @@
   "size": 1
  },
  {
+  "name": "reading",
+  "size": 2
+ },
+ {
   "name": "sorting-algorithm",
   "size": 2
  },
