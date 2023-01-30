@@ -1,6 +1,6 @@
 {
  "type": "wiki",
- "title": "Java에서의 Hashmap 동작",
+ "title": "Java의 Map interface",
  "summary": "",
  "parent": "java",
  "url": "/wiki/java/hash-map",

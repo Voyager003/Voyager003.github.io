@@ -12,6 +12,10 @@
   "size": 5
  },
  {
+  "name": "Data-structure",
+  "size": 1
+ },
+ {
   "name": "git",
   "size": 1
  },
@@ -21,7 +25,11 @@
  },
  {
   "name": "java",
-  "size": 9
+  "size": 11
+ },
+ {
+  "name": "jvm",
+  "size": 1
  },
  {
   "name": "linkedlist",
@@ -45,7 +53,7 @@
  },
  {
   "name": "tree",
-  "size": 1
+  "size": 2
  },
  {
   "name": "wiki",

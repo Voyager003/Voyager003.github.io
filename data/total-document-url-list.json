@@ -7,6 +7,7 @@
  "/wiki/Data-Structure",
  "/wiki/Data-structure/Array",
  "/wiki/Data-structure/Hash",
+ "/wiki/Data-structure/Heap",
  "/wiki/Data-structure/LinkedList",
  "/wiki/Data-structure/Queue",
  "/wiki/Data-structure/Stack",
@@ -16,6 +17,7 @@
  "/wiki/index",
  "/wiki/Java",
  "/wiki/java/hash-map",
+ "/wiki/java/JVM",
  "/wiki/Reading",
  "/wiki/Reading/2301-reading"
 ]

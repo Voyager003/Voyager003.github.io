@@ -3,9 +3,11 @@
  "Algorithm/Selection-sort",
  "Data-structure/Array",
  "Data-structure/Hash",
+ "Data-structure/Heap",
  "Data-structure/LinkedList",
  "Data-structure/Queue",
  "Data-structure/Stack",
  "Data-structure/Tree",
- "java/hash-map"
+ "java/hash-map",
+ "java/JVM"
 ]
