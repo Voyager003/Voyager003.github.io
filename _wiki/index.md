@@ -3,7 +3,7 @@ layout  : wiki
 title   : Wiki
 summary : 
 date    : 2023-01-09 15:24:31 +0900
-updated : 2023-01-30 09:45:51 +0900
+updated : 2023-01-31 10:12:05 +0900
 tag     : wiki
 resource: 38/1839B7-F38A-4961-B680-EEA4A250632E
 toc     : true
@@ -16,6 +16,7 @@ latex   : false
 * [[/Algorithm/time-complexity]]
 * [[/Algorithm/Bubble-sorting]]
 * [[/Algorithm/Selection-sort]]
+* [[/Algorithm/Recursive-call]]
 
 ## [[Data-Structure]]
 * [[/Data-structure/Array]]
