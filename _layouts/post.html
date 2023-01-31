@@ -2,6 +2,15 @@
 layout: default
 ---
 <div class="post">
+
+    <script src="https://utteranc.es/client.js"
+            repo="voyager003/voyager003.github.io"
+            issue-term="url"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+    </script>
+
     <header class="post-header">
         <h1 class="page-title">
             <a href="{{ page.url }}"> {{ page.title }} </a>
@@ -13,10 +22,10 @@ layout: default
         <h2>{{ page.summary }}</h2>
     </header>
 
-{% if page.toc %}
+    {% if page.toc %}
     <div class="toc">
     </div>
-{% endif %}
+    {% endif %}
     <article class="post-content">
         {{ content }}
     </article>

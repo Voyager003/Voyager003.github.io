@@ -1,6 +1,15 @@
 {% if page.comment != false %}
     <div class="giscus"></div>
     <div class="post-comments">
+
+        <script src="https://utteranc.es/client.js"
+                repo="voyager003/voyager003.github.io"
+                issue-term="url"
+                theme="github-light"
+                crossorigin="anonymous"
+                async>
+        </script>
+
     <script src="https://giscus.app/client.js"
         data-repo="{{ site.giscus.repo }}"
         data-repo-id="{{ site.giscus.repo_id }}"
