@@ -8,6 +8,7 @@
  "resource": "99/C349BD-F6D5-4BCC-821C-67D064BDA72E",
  "children": [
   "Algorithm/Bubble-sorting",
+  "Algorithm/Merge-sort",
   "Algorithm/Recursive-call",
   "Algorithm/Selection-sort",
   "Algorithm/time-complexity"

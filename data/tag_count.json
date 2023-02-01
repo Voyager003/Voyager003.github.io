@@ -25,7 +25,7 @@
  },
  {
   "name": "java",
-  "size": 12
+  "size": 13
  },
  {
   "name": "jvm",
@@ -45,7 +45,7 @@
  },
  {
   "name": "sorting-algorithm",
-  "size": 2
+  "size": 3
  },
  {
   "name": "spring",

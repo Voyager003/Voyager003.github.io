@@ -3,7 +3,7 @@ layout  : wiki
 title   : Wiki
 summary : 
 date    : 2023-01-09 15:24:31 +0900
-updated : 2023-01-31 16:40:26 +0900
+updated : 2023-02-01 10:06:24 +0900
 tag     : wiki
 resource: 38/1839B7-F38A-4961-B680-EEA4A250632E
 toc     : true
@@ -17,6 +17,7 @@ comment : false
 * [[/Algorithm/time-complexity]]
 * [[/Algorithm/Bubble-sorting]]
 * [[/Algorithm/Selection-sort]]
+* [[/Algorithm/Merge-sort]]
 * [[/Algorithm/Recursive-call]]
 
 ## [[Data-Structure]]
@@ -26,7 +27,7 @@ comment : false
 * [[/Data-structure/Stack]]
 * [[/Data-structure/Hash]]
 * [[/Data-structure/Tree]]
-# [[/Data-structure/Heap]]
+* [[/Data-structure/Heap]]
 
 ## [[git]]
 * [[/git/how-to-git]]
