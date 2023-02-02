@@ -3,7 +3,7 @@ layout  : wiki
 title   : Servlet과 JSP와 MVC패턴 등장 배경
 summary : 
 date    : 2023-01-31 16:39:50 +0900
-updated : 2023-02-03 00:25:19 +0900
+updated : 2023-02-03 00:30:16 +0900
 tag     : spring java
 resource: 73/B2CCBC-0CB6-495F-9B41-E432E84D645D
 toc     : true
@@ -45,7 +45,7 @@ WAS를 따로 나누지 않고 Web Server라는 개념을 통칭해서 사용했
 #### Web Application Server(WAS)
 
 **Web Applcation Server(WAS)** 는 Application Server의 종류로 J2EE(Java 2 Enterprise Edition)의 스펙을 구현하여 
-애플리케이션을 개발하기 위한 기술과 환경을 제공하며 Servlet이나 JSP로 작성된 애플리케이션을 실행하는 소프트웨어이다. (Apache Tomcat이 이에 해당한다.)
+애플리케이션을 개발하기 위한 기술과 환경을 제공하며 Servlet이나 JSP로 작성된 애플리케이션을 실행하는 소프트웨어이다.
 
 Web Server에서 동적인 data를 반환하려면 요청에 알맞는 프로그램(A)이 필요할 뿐만 아니라, 프로그램(A)에 적절히 넘겨 주는 중간자 역할을 
 는 프로그램(B)이 필요한데 **CGI 프로그램(B)** 이 그 역할을 하게된다. 
