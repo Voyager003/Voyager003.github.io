@@ -58,7 +58,7 @@ Front Controller에서 렌더링 하도록 처리
 
 하지만 이 FrontController에도 맹점이 있었다. 예를 들어 A 개발자는 ModelView를 반환하는 controller를 사용하고 싶고, B 개발자는 view name을
 반환하는 controller를 사용하고 싶어한다고 상황이 발생할 수도 있다. 이를 위해 여러 controller와 호환 가능하도록 front-controller와 
-controller 사이에 adapter를 도입됐다.
+controller 사이에 adapter가 도입됐다.
 
 ### Adapter
 
@@ -134,5 +134,5 @@ Dispatcher Servlet을 통해 반환되는 응답은 다시 필터들을 거쳐 �
 ## 참고자료
 - https://developer.mozilla.org/ko/docs/Glossary/MVC#%EC%9B%B9%EC%97%90%EC%84%9C%EC%9D%98_mvc - MVC 이미지
 - https://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-reference/html/mvc.html - Spring docs
-- https://mangkyu.tistory.com/18 - Dispatcher servlet (망나니 개발자님의 블로)
+- https://mangkyu.tistory.com/18 - Dispatcher servlet (망나니 개발자님의 블로그)
 - https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-mvc-1/dashboard - 김영한님의 강의
