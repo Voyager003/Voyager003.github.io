@@ -16,6 +16,8 @@ latex   : false
 
 ## Quick Sort
 
+![alt](https://upload.wikimedia.org/wikipedia/commons/6/6a/Sorting_quicksort_anim.gif)
+
 - divide and conquer(분할 정복)을 통해 정렬하는 알고리즘으로 과정은 다음과 같다. 
 - pivot(기준점)을 정해, pivot보다 작은 data는 left, 큰 data는 right로 나눈다.
 - 각 left와 right는 Recursive call을 통해 다시 동일 함수를 호출하여 위의 작업을 반복한다.
@@ -113,4 +115,5 @@ System.out.println("sortedList = " + sortedList); // sortedList = [1, 2, 4, 5, 7
 또한 Stable을 보장하는 merge-sort와 달리 Sorting 후에 동일한 element에 대한 우선순위가 유지되지 않는 Unstable sort이다.
 
 ## 참고자료
+- https://en.wikipedia.org/wiki/File:Sorting_quicksort_anim.gif - Quick sort 이미지
 - https://www.youtube.com/watch?v=7BDzle2n47c&t=3s&ab_channel=%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD - Quick Sort 설명 및 구현
