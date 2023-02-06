@@ -9,6 +9,7 @@
  "children": [
   "Algorithm/Bubble-sorting",
   "Algorithm/Merge-sort",
+  "Algorithm/Quick-sort",
   "Algorithm/Recursive-call",
   "Algorithm/Selection-sort",
   "Algorithm/time-complexity"

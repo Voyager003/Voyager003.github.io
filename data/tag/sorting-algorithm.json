@@ -1,5 +1,6 @@
 [
  "Algorithm/Bubble-sorting",
  "Algorithm/Merge-sort",
+ "Algorithm/Quick-sort",
  "Algorithm/Selection-sort"
 ]
