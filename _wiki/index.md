@@ -3,7 +3,7 @@ layout  : wiki
 title   : Wiki
 summary : 
 date    : 2023-01-09 15:24:31 +0900
-updated : 2023-02-06 10:28:32 +0900
+updated : 2023-02-09 23:24:43 +0900
 tag     : wiki
 resource: 38/1839B7-F38A-4961-B680-EEA4A250632E
 toc     : true
@@ -43,5 +43,10 @@ comment : false
 * [[/Spring/Spring-mvc]]
 * [[/Spring/Spring-mvc2]]
 
+## [[DataBase]]
+* [[/DataBase/connection-pool]]
+
 ## [[Reading]]
 * [[/Reading/2301-reading]]
+
+

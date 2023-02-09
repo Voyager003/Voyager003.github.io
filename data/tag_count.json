@@ -16,6 +16,10 @@
   "size": 1
  },
  {
+  "name": "db",
+  "size": 1
+ },
+ {
   "name": "git",
   "size": 1
  },
@@ -25,7 +29,11 @@
  },
  {
   "name": "java",
-  "size": 15
+  "size": 16
+ },
+ {
+  "name": "jdbc",
+  "size": 1
  },
  {
   "name": "jvm",
