@@ -19,6 +19,7 @@
  "/wiki/DataBase/connection-pool",
  "/wiki/git",
  "/wiki/git/how-to-git",
+ "/wiki/How-to",
  "/wiki/index",
  "/wiki/Java",
  "/wiki/java/hash-map",
@@ -26,6 +27,7 @@
  "/wiki/Reading",
  "/wiki/Reading/2301-reading",
  "/wiki/Spring",
+ "/wiki/Spring/Spring-Annotation",
  "/wiki/Spring/Spring-mvc",
  "/wiki/Spring/Spring-mvc2"
 ]
