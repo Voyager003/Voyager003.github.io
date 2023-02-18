@@ -1,6 +1,14 @@
 _site
 .sass-cache
-.jekyll-cache
 .jekyll-metadata
 .idea
-vendor
+tags
+*.swp
+Gemfile.lock
+/node_modules
+package-lock.json
+.jekyll-cache/
+.DS_Store
+.localhost.log
+.localhost.pid
+.quickfix-bookmark
