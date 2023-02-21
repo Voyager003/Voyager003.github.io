@@ -3,7 +3,7 @@ layout  : wiki
 title   : Wiki
 summary : 
 date    : 2023-01-09 15:24:31 +0900
-updated : 2023-02-17 09:05:00 +0900
+updated : 2023-02-20 22:42:55 +0900
 tag     : wiki
 resource: 38/1839B7-F38A-4961-B680-EEA4A250632E
 toc     : true
@@ -30,15 +30,7 @@ comment : false
 * [[/Data-structure/Tree]]
 * [[/Data-structure/Heap]]
 
-## [[How-to]]
-
-### [[git]]
-* [[/git/how-to-git]]
-
-## [[computer-science]]
-
 ## [[Java]]
-* [[/java/hash-map]]
 * [[/java/JVM]]
 
 ## [[Spring]]
@@ -54,5 +46,5 @@ comment : false
 
 ## [[Reading]]
 * [[/Reading/2301-reading]]
-
+* [[/Reading/2302-reading]]
 
