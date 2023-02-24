@@ -3,7 +3,7 @@ layout  : category
 title   : 책읽자
 summary : 
 date    : 2023-01-26 23:47:18 +0900
-updated : 2023-02-12 21:30:15 +0900
+updated : 2023-02-23 23:58:10 +0900
 tag     : reading
 resource: F5/D65F08-17B4-4031-A23B-765161F9349A
 toc     : true
@@ -18,8 +18,9 @@ latex   : false
 - HTTP 완벽가이드 
 - Clean Code
 - Effective Java 3판
-- SQL 레벨업
 - 테스트 주도 개발
+- 객체지향의 사실과 오해
+- 오브젝트
 
 ## 읽을 책 목록
 - [x] Nudge 넛지
@@ -45,6 +46,7 @@ latex   : false
 - [ ] 마음의 법칙
 - [ ] 마흔에 읽는 니체
 - [ ] 익스텐드 마인드
+- [ ] 군주론 - 마키아밸리
 
 ## 추천받은 문학
 - [x] 소년이 온다 - 한강 
