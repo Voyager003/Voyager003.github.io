@@ -1,0 +1,12 @@
+{
+ "type": "wiki",
+ "title": "용어",
+ "summary": "",
+ "parent": "index",
+ "url": "/wiki/terminology",
+ "updated": "2023-02-28 20:41:38 +0900",
+ "resource": "2F/29F0AF-D075-4248-BA75-9F68C30E7FCE",
+ "children": [
+  "terminology/build-cicd"
+ ]
+}
