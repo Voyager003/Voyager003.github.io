@@ -1,11 +1,11 @@
 ---
 layout  : wiki
-title   : jar, war
+title   : jar와 war 차이 
 summary : 
-date    : 2023-03-01 12:27:30 +0900
-updated : 2023-03-01 23:04:04 +0900
+date    : 2023-03-01 23:09:18 +0900
+updated : 2023-03-01 23:10:11 +0900
 tag     : java terminology
-resource: 26/D31005-7D8C-41B7-BD5B-DFE1679DDA7A
+resource: 86/B32FA0-D521-4B01-8A41-C1D4618FE4D0
 toc     : true
 public  : true
 parent  : [[/terminology]]
@@ -39,7 +39,7 @@ Spring boot guide의 dafault는 jar이며, 내장 WAS(Spring boot의 Tomcat)을 
 
 ### war
 
-> Web application ARchive의 약자로 서블릿 클래스 파일, JSP 파일, 지원 파일, GIF 및 HTML 파일을 포함하는 
+> Web application ARchive의 약자로 서블릿 클래스 파일, JSP 파일, 지원 파일, GIF 및 HTML 파일을 포함하는
 > 웹 모듈은 확장자가 .war (웹 아카이브) 인 JAR 파일로 패키지된다.
 
 - Servlet / Jsp 컨테이너에 배치할 수 있는 웹 애플리케이션(Web Application) 압축파일 포맷이다.
@@ -52,15 +52,12 @@ JSP로 화면을 구성하거나 외장 WAS를 써야하는 환경이라면 war 
 
 ### ear
 
-> Enterprise ARchive의 약자로 .jar 및 .war은 확장자가 .ear (enterprise archive)인 
+> Enterprise ARchive의 약자로 .jar 및 .war은 확장자가 .ear (enterprise archive)인
 > JAR 파일로 패키지되어 Application Server에 배치된다.
 
-EAR 파일을 실행하려면 완전한 Java EE (Java Platform, Enterprise Edition) 또는 WebSphere 또는 JBoss와 같은 
+EAR 파일을 실행하려면 완전한 Java EE (Java Platform, Enterprise Edition) 또는 WebSphere 또는 JBoss와 같은
 Jakarta Enterprise Edition (EE) 호환 애플리케이션 서버가 필요하다.
 
-## 파일 작성
-
-JDK에는 jar.exe라는 특수 유틸리티가 포함되있으며, 이는 웹, 엔터프라이즈 및 Java 응용 프로그램을 해당 유형으로 패키징하고 압축한다
 ## 참고자료
 
 - https://www.javatpoint.com/spring-boot-packaging - 패키징

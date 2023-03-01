@@ -8,7 +8,6 @@
  "resource": "2F/29F0AF-D075-4248-BA75-9F68C30E7FCE",
  "children": [
   "terminology/build-cicd",
-  "terminology/jar_war",
-  "terminology/jar-war"
+  "terminology/jar_war"
  ]
 }
