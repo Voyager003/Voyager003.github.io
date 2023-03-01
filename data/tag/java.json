@@ -15,6 +15,5 @@
  "java/hash-map",
  "java/JVM",
  "Spring/Spring-mvc",
- "Spring/Spring-package",
- "terminology/build-cicd"
+ "Spring/Spring-package"
 ]
