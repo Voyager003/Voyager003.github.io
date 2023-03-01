@@ -29,7 +29,7 @@
  },
  {
   "name": "java",
-  "size": 18
+  "size": 19
  },
  {
   "name": "jdbc",
@@ -65,7 +65,7 @@
  },
  {
   "name": "terminology",
-  "size": 2
+  "size": 3
  },
  {
   "name": "tree",
