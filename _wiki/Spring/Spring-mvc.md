@@ -3,7 +3,7 @@ layout  : wiki
 title   : Servlet과 JSP와 MVC패턴 등장 배경
 summary : 
 date    : 2023-01-31 16:39:50 +0900
-updated : 2023-02-03 00:30:16 +0900
+updated : 2023-03-02 23:17:15 +0900
 tag     : spring java
 resource: 73/B2CCBC-0CB6-495F-9B41-E432E84D645D
 toc     : true
@@ -88,13 +88,25 @@ init()에서 처리하는 것을 확인할 수 있다.
 
 ---
 
-전반적으로 Servlet에 대해 살펴봤는데, WAS가 Servlet Container를 포함하고 있어 WAS와 Servlet Container 두 개념이 헷갈리는데 이유는 아마 Apache Tomcat의 존재때문일 
-것이다. 
+전반적으로 Servlet에 대해 살펴봤는데, WAS와 Servlet Container 두 개념이 헷갈리는데 이유는 아마 Apache Tomcat의 존재때문일 것이다. 
 
-Tomcat이 Servlet Container이면서도 WAS의 역할을 어느정도 하기 때문에 WAS로 간주하기도 하는데,
-tomcat은 J2EE 스펙을 전부 구현하고 있지는 않기 때문에 Servlet container이지만 WAS라고 하기에는 약간 제한적이라고 말할 수 있다.
+이는 [영한님의 답변](https://www.inflearn.com/questions/799587/tomcat%EC%97%90-%EB%8C%80%ED%95%B4-%EC%A7%88%EB%AC%B8%EB%93%9C%EB%A6%BD%EB%8B%88%EB%8B%A4)이 이 의문을 해소해주었다.
 
-또한 WAS만 쓰면 되지 왜 Web Server를 따로 쓰느냐는 의문이 생길 수 있다. 
+원칙적으로 WAS는 웹 애플리케이션 서버라 불리며, 애플리케이션 로직을 수행할 수 있는 웹 서버(Web은 HTTP 기반으로 동작)라는 뜻이다.
+
+하지만 Java 진영에서는 표준인 Jakarata EE와 함께 섞여서 이야기 되는 부분이 있다. Jakarta EE(Java EE)안에는 Servlet, JPA로 불리는
+Java Persistence, 분산 트랜잭션 기능이 포함되는데, 과거 Java 진영에서는 이런 기능을 지원하는 값비싼 소프트웨어를 WAS라고 부르기도 했다.
+(IBM의 웹스피어, BEA의 웹로직 등..)
+
+Spring의 등장 이후로는 Servlet을 제외한 나머지 부분을 Spring 프레임워크가 담당하게 되면서, 값비싼 소프트웨어없이 Servlet을 지원하는 Tomcat과 
+Spring의 조합으로 Enterprise 환경에서 동작하는 WAS를 구축할 수 있게 됐다.
+
+그래서 현재 Java 진영에서 사용하는 WAS라는 용어는 Jakarata EE를 사용하지 않더라도, Servlet Container를 포함하면서 애플리케이션 로직을 수행할 수 있는 
+웹 서버라면 WAS라는 용어를 사용한다고 한다. 더불어 Servlet Container를 포함하지 않아도 웹 서버의 역할을 하면서 애플리케이션 로직을 수행할 수 있다면 WAS라고 할 수 있다.
+
+---
+
+또한 WAS만 쓰면 될 것 같은데 왜 Web Server를 따로 쓰느냐는 의문이 생길 수 있다. 
 
 WAS와 Web Server는 둘 다 정적인 파일을 처리할 수가 있지만 WAS에서 응답을 처리할 때에는 외부 프로그램, Servlet Container 등의 존재 때문에 
 부하가 많이 걸리게 되고 하나의 WAS에 너무 많은 요청이 몰리게 되면, 처리할 data가 많아져서 CPU에 부하가 오게 된다.
@@ -141,3 +153,4 @@ Servlet Container 설명으로 글이 너무 길어져서 이어서 다음 글�
 - https://tecoble.techcourse.co.kr/post/2021-05-24-apache-tomcat/ - Web server, was, container 차이
 - https://lob-dev.tistory.com/entry/CGI-Servlet-Servlet-Container - Servlet flow
 - https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-mvc-1/dashboard - 김영한님의 강의
+- https://www.inflearn.com/questions/799587/tomcat%EC%97%90-%EB%8C%80%ED%95%B4-%EC%A7%88%EB%AC%B8%EB%93%9C%EB%A6%BD%EB%8B%88%EB%8B%A4
