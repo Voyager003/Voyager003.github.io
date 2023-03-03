@@ -3,7 +3,7 @@ layout  : wiki
 title   : 빌드와 배포
 summary : 
 date    : 2023-02-28 20:43:36 +0900
-updated : 2023-02-28 23:31:28 +0900
+updated : 2023-03-03 22:53:14 +0900
 tag     : terminology
 resource: AD/FFE35F-C082-4791-B7BE-EC015E3E602D
 toc     : true
@@ -89,8 +89,8 @@ Java를 예로 들자면 Java 소스 코드(.java)를 컴파일하면 byte code(
 주로 쓰이는 의미는 서버에 반영한다는 것을 의미한다.
 
 - IDE에서 JAVA로 코딩을 하고 코드 완성 후 Run 버튼 눌러서 코드 실행 (빌드과정(컴파일))
-- 정상 실행 후, 이를 .war 파일로 뽑아서(빌드) -> 웹서버에 올리거나(배포)
-- Jenkins, gitlab과 같은 tool을 사용해 exe, jar 파일로 추출하여(빌드) 사용자에게 올린다(배포)
+- 정상 실행 후, 이를 .war 파일로 뽑아서(빌드) -> Web server에 올리거나(배포)
+- Jsmooth 같은 tool을 사용하여 exe 파일로 추출하여(빌드) 사용자에게 올린다.(배포)
 
 ## 참고자료
 
