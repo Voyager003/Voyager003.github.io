@@ -3,8 +3,8 @@ layout  : wiki
 title   : 정적, 동적 바인딩 
 summary : 
 date    : 2023-03-05 20:37:20 +0900
-updated : 2023-03-05 20:37:42 +0900
-tag     : java
+updated : 2023-03-05 23:04:29 +0900
+tag     : java terminology
 resource: F4/1EBCEC-4D43-4972-9229-E33334177F88
 toc     : true
 public  : true
