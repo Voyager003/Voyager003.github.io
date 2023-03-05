@@ -16,5 +16,6 @@
  "java/JVM",
  "Spring/Spring-mvc",
  "Spring/Spring-package",
+ "terminology/binding",
  "terminology/jar_war"
 ]
