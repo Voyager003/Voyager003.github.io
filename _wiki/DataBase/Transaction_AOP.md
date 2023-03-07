@@ -3,7 +3,7 @@ layout  : wiki
 title   : 트랜잭션 추상화와 동기화 
 summary : 
 date    : 2023-03-07 13:48:26 +0900
-updated : 2023-03-07 16:54:53 +0900
+updated : 2023-03-07 18:31:14 +0900
 tag     : java jdbc
 resource: A5/267162-D30A-4FE8-82EA-D24048979795
 toc     : true
@@ -255,7 +255,7 @@ public class MemberService {
     businesslogic(...);
   }
 
-  private void bizLogic(String fromId, String toId, int money) throws SQLException{
+  private void businessLogic(String fromId, String toId, int money) throws SQLException{
     ...
   }
 }
