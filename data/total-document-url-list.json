@@ -18,6 +18,7 @@
  "/wiki/DataBase",
  "/wiki/DataBase/connection-pool",
  "/wiki/DataBase/Transaction",
+ "/wiki/DataBase/Transaction_AOP",
  "/wiki/Document",
  "/wiki/Document/google-styleguide",
  "/wiki/git",
