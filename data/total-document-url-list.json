@@ -17,6 +17,7 @@
  "/wiki/Data-structure/Tree",
  "/wiki/DataBase",
  "/wiki/DataBase/connection-pool",
+ "/wiki/DataBase/JPA_entity",
  "/wiki/DataBase/Transaction",
  "/wiki/DataBase/Transaction_AOP",
  "/wiki/Document",

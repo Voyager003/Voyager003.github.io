@@ -8,6 +8,7 @@
  "resource": "DB/08D821-91A7-49DA-AF56-8C8C42D26081",
  "children": [
   "DataBase/connection-pool",
+  "DataBase/JPA_entity",
   "DataBase/Transaction",
   "DataBase/Transaction_AOP"
  ]
