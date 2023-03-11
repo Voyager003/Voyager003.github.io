@@ -29,11 +29,15 @@
  },
  {
   "name": "java",
-  "size": 22
+  "size": 23
  },
  {
   "name": "jdbc",
   "size": 3
+ },
+ {
+  "name": "jpa",
+  "size": 1
  },
  {
   "name": "jvm",

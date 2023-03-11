@@ -1,10 +1,10 @@
 {
  "type": "wiki",
- "title": "JPA 동작원리",
+ "title": "JPA 내부 동작",
  "summary": "",
  "parent": "DataBase",
  "url": "/wiki/DataBase/JPA_entity",
- "updated": "2023-03-10 21:35:55 +0900",
+ "updated": "2023-03-11 16:51:30 +0900",
  "resource": "89/E1FBC6-F58D-49F2-80EF-4041DB18003A",
  "children": []
 }

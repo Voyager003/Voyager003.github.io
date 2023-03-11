@@ -12,6 +12,7 @@
  "Data-structure/Stack",
  "Data-structure/Tree",
  "DataBase/connection-pool",
+ "DataBase/JPA_entity",
  "DataBase/Transaction",
  "DataBase/Transaction_AOP",
  "java/hash-map",
