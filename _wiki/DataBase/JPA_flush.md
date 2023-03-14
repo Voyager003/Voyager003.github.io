@@ -3,7 +3,7 @@ layout  : wiki
 title   : JPA flush(플러시)
 summary : 
 date    : 2023-03-14 16:28:43 +0900
-updated : 2023-03-14 23:30:58 +0900
+updated : 2023-03-14 23:39:12 +0900
 tag     : jpa java
 resource: B6/1C958A-D05E-4D11-8099-438CABF17C8D
 toc     : true
@@ -61,7 +61,7 @@ em.persist(member2);
 query = em.createQuery("select m from ...");
 ```
 
-member1과 member2를 Persistence Context에 저장하고, 동적 query를 실행하는 예이다.
+member1과 member2를 Persistence Context에 저장하고, jqpl을 실행하는 예이다.
 
 이 때, query를 실행하고 flush를 호출하지 않는다면 DB 변경내역을 확인할 수 없을 것이다.
 
