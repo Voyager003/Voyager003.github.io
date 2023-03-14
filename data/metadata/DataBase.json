@@ -9,6 +9,7 @@
  "children": [
   "DataBase/connection-pool",
   "DataBase/JPA_entity",
+  "DataBase/JPA_flush",
   "DataBase/Transaction",
   "DataBase/Transaction_AOP"
  ]

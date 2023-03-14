@@ -18,6 +18,7 @@
  "/wiki/DataBase",
  "/wiki/DataBase/connection-pool",
  "/wiki/DataBase/JPA_entity",
+ "/wiki/DataBase/JPA_flush",
  "/wiki/DataBase/Transaction",
  "/wiki/DataBase/Transaction_AOP",
  "/wiki/Document",
@@ -44,6 +45,7 @@
  "/wiki/terminology/binding",
  "/wiki/terminology/build-cicd",
  "/wiki/terminology/jar_war",
+ "/wiki/terminology/Maven_Gradle",
  "/wiki/Topic",
  "/wiki/Topic/23-trend"
 ]
