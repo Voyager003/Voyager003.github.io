@@ -1,6 +1,5 @@
 [
  "terminology/binding",
  "terminology/build-cicd",
- "terminology/jar_war",
- "terminology/Maven_Gradle"
+ "terminology/jar_war"
 ]

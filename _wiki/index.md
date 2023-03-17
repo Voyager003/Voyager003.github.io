@@ -3,7 +3,7 @@ layout  : wiki
 title   : Wiki
 summary : 
 date    : 2023-01-09 15:24:31 +0900
-updated : 2023-03-14 16:29:23 +0900
+updated : 2023-03-17 16:00:39 +0900
 tag     : 
 resource: 38/1839B7-F38A-4961-B680-EEA4A250632E
 toc     : true
@@ -47,6 +47,7 @@ comment : false
 * [[/DataBase/Transaction_AOP]]
 * [[/DataBase/JPA_entity]]
 * [[/DataBase/JPA_flush]]
+* [[/DataBase/JPA_Proxy]]
 
 ## [[Document]]
 * [[/Document/google-styleguide]]
@@ -60,7 +61,6 @@ comment : false
 * [[/terminology/build-cicd]]
 * [[/terminology/jar_war]]
 * [[/terminology/binding]]
-* [[/terminology/Maven_Gradle]]
 
 ## [[Topic]]
 * [[/Topic/23-trend]]
