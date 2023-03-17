@@ -19,6 +19,7 @@
  "/wiki/DataBase/connection-pool",
  "/wiki/DataBase/JPA_entity",
  "/wiki/DataBase/JPA_flush",
+ "/wiki/DataBase/JPA_Proxy",
  "/wiki/DataBase/Transaction",
  "/wiki/DataBase/Transaction_AOP",
  "/wiki/Document",

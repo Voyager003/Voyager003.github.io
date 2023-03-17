@@ -14,6 +14,7 @@
  "DataBase/connection-pool",
  "DataBase/JPA_entity",
  "DataBase/JPA_flush",
+ "DataBase/JPA_Proxy",
  "DataBase/Transaction",
  "DataBase/Transaction_AOP",
  "java/hash-map",

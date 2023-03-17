@@ -1,4 +1,5 @@
 [
  "DataBase/JPA_entity",
- "DataBase/JPA_flush"
+ "DataBase/JPA_flush",
+ "DataBase/JPA_Proxy"
 ]
