@@ -72,6 +72,10 @@
   "size": 3
  },
  {
+  "name": "topic",
+  "size": 1
+ },
+ {
   "name": "tree",
   "size": 2
  }
