@@ -3,7 +3,7 @@ layout  : wiki
 title   : Wiki
 summary : 
 date    : 2023-01-09 15:24:31 +0900
-updated : 2023-03-26 10:07:55 +0900
+updated : 2023-03-27 21:52:46 +0900
 tag     : 
 resource: 38/1839B7-F38A-4961-B680-EEA4A250632E
 toc     : true
@@ -33,6 +33,7 @@ comment : false
 ## [[Java]]
 * [[/java/JVM]]
 * [[/java/java_throwable]]
+* [[/java/java_type]]
 
 ## [[Spring]]
 * [[/Spring/Spring-mvc]]
