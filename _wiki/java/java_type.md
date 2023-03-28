@@ -203,7 +203,6 @@ int [] arr4 = {1, 2, 3, 4, 5}; // 초기화 2
 ### 2차원 배열 선언 및 초기화
 
 ```java
-String[][] names1 = {{ "asd", "dfg" },{ "zxc", "cvb"}};
 String[][] names2 = new String[10][];
 String[][] names3 = new String[10][10];
 ```
