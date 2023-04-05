@@ -3,7 +3,7 @@ layout  : wiki
 title   : Java 연산자 
 summary : 
 date    : 2023-03-31 21:24:12 +0900
-updated : 2023-03-31 23:31:00 +0900
+updated : 2023-04-05 22:15:08 +0900
 tag     : java
 resource: 01/421E7C-C6D0-4F93-B939-D037808BE93A
 toc     : true
@@ -82,9 +82,171 @@ latex   : false
     System.out.println(!(a > b)); // true => false
     ```
 
+## instanceof
+
+> Object가 특정 class, interface인지 여부를 확인한다.
+
+```java
+// 표기
+(Object reference variable) instanceof (class/interface type)
+
+// 예시
+class A {}
+
+class B extends A {
+}
+
+
+  class Parent { }
+  class Child extends Parent {
+  }
+
+  void run() {
+    Parent parent = new Parent();
+    Child child = new Child();
+
+    System.out.println(parent instanceof Parent);   // true
+    System.out.println(child instanceof Child);     // true
+
+    System.out.println(child instanceof Parent);    // true
+    System.out.println(parent instanceof Child);    // false
+}
+```
+- Object type(객체 타입)을 확인하는데 사용하는 연산자, 여부를
+- 객체 instanceof 객체타입 == true를 반환한다.
+- 자녀객체 instanceof 부모타입 == true를 반환한다.
+- 부모객체 instanceof 자녀타입 == false를 반환한다.
+
+## assignment(=) operator (대입 연산자)
+
+> 값을 메모리의 일부에 대입하거나 저장할 때 사용되는 연산자이다.
+
+<img width="811" alt="스크린샷 2023-04-05 오후 9 03 32" src="https://user-images.githubusercontent.com/85725033/230074876-837523db-c67d-42b2-a6a1-ba3379421921.png">
+
+## 화살표(->) 연산자
+
+> 매개변수를 받아 값을 반환하는 짧은 코드 블록으로, 이름이 필요하지 않으며 메서드 본문에서 바로 구현할 수 있다.
+
+```java
+// 구현
+(Parameter)->{구현코드(Lambda식)};
+
+// 예시
+
+// method
+public int sum(int a, int b){
+    return a+b;
+}
+
+// lambda
+(a, b)->a + b;
+```
+
+- Java 8에 추가된 기능으로 Lambda 표현식에 사용되는 연산자이다.
+- 이름이 필요하지 않아 익명함수라고도 한다.
+
+## 3항 연산자
+
+> 피연산자 3개를 가지는 조건 연산자이다.
+
+```java
+// 구현
+조건식 ? 반환값1 : 반환값2
+
+// 예시
+int num1 = 1, num2 = 2;
+int result;
+result = (num1 - num2 > 0) ? num1 : num2;
+System.out.println("둘 중 더 큰 수는" + result); // 둘 중 더 큰수는 2
+```
+
+- 물음표(?) 앞의 조건식에 따라 결과가 true라면 반환값1을 반환하고, false라면 반환값2를 반환한다.
+
+## 연산자 우선 순위
+
+<img width="811" alt="스크린샷 2023-04-05 오후 9 03 32" src="https://user-images.githubusercontent.com/85725033/230078378-31ac53d9-2be8-485b-bf08-0040a65e9187.png">
+
+
+## switch 연산자
+
+```java
+// 기본 형식
+switch(입력변수) {
+    case 입력값1: ...
+         break;
+    case 입력값2: ...
+         break;
+    ...
+    default: ...
+         break;
+}
+```
+
+- 입력변수의 값과 일치하는 case 입력값(입력값1, 입력값2, ...)이 있다면 해당 case문에 속한 문장들이 실행된다. 
+- break는 해당 case문을 실행 한 뒤 switch문을 탈출하기 위함이다.
+- 만약 break 문이 빠져 있다면 그 다음의 case 문이 실행된다.
+
+### 추가된 기능
+
+```java
+public enum Day { SUNDAY, MONDAY, TUESDAY,
+  WEDNESDAY, THURSDAY, FRIDAY, SATURDAY; 
+}
+
+// ...
+
+  int numLetters = 0;
+  Day day = Day.WEDNESDAY;
+  switch(day) {
+    case MONDAY, FRIDAY, SUNDAY -> System.out.println(6);
+    case TUESDATE               -> System.out.println(7);
+    case THURSDATY, SATURDAY    -> System.out.println(8);
+    case WEDNESDAY              -> System.out.println(9);
+    default -> throw new IllegalStateException("Invalid day: " + day);
+}
+```
+
+- 기존 switch는 break 미사용 시, 다음 case로 이어지고, 각 case마다 break를 작성해야 하는 번거로움이 있었다.
+- Java 12SE부터 :대신 -> 연산자를 사용하여 break없이 한 개의 표현식은 한 개의 case로 인식할 수 있다.
+- 또한 콤마(,)를 사용하여 한 case에 여러 값 입력 가능하다.
+
+```java
+int numLetters = switch(day) {
+  case MONDAY, FRIDAY, SUNDAY -> 6;
+  case TUESDATE               -> 7;
+  case THURSDATY, SATURDAY    -> 8;
+  case WEDNESDAY              -> 9;
+};
+
+T result = switch(arg) {
+    case L1 -> e1;
+    case L2 -> e2;
+    default -> e3;
+};
+```
+
+- 기존에는 switch문 내에서 새로운 로컬 변수를 사용하려면 switch 블록 내부에서만 사용하거나, 블록 외부에 변수 선언 후 사용 가능했다.
+- Java 12부터 switch문을 사용하여 값 반환 가능
+
+```java
+int j = switch(day) {
+  case MONDAY   -> 0;
+  case THUSDAY  -> 1;
+  case default  -> {
+    int k = day.toString().length();
+    int result = f(k);
+    yield result;
+  }
+};
+```
+
+- Java 13에서 추가된 키워드 yield는 switch문의 case의 값을 반환한다.
 
 
 ## 참고자료
 
 - https://docs.oracle.com/javase/tutorial/java/nutsandbolts/op1.html 
 - https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html
+- http://tcpschool.com/java/java_operator_assignment - 대입 연산자
+- https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html - 람다식
+- https://docs.oracle.com/en/java/javase/13/language/switch-expressions.html - switch expressions
