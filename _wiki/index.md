@@ -3,7 +3,7 @@ layout  : wiki
 title   : Wiki
 summary : 
 date    : 2023-01-09 15:24:31 +0900
-updated : 2023-04-10 00:12:39 +0900
+updated : 2023-04-12 21:50:58 +0900
 tag     : 
 resource: 38/1839B7-F38A-4961-B680-EEA4A250632E
 toc     : true
@@ -66,6 +66,7 @@ comment : false
 * [[/terminology/build-cicd]]
 * [[/terminology/jar_war]]
 * [[/terminology/binding]]
+* [[/terminology/Law_of_Demeter]]
 
 ## [[Topic]]
 * [[/Topic/23-trend]]
