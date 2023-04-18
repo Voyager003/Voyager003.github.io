@@ -40,6 +40,10 @@
   "size": 3
  },
  {
+  "name": "js",
+  "size": 1
+ },
+ {
   "name": "jvm",
   "size": 1
  },

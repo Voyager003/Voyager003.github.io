@@ -4,7 +4,7 @@
  "summary": "",
  "parent": "",
  "url": "/wiki/index",
- "updated": "2023-04-15 15:15:01 +0900",
+ "updated": "2023-04-18 23:05:18 +0900",
  "resource": "38/1839B7-F38A-4961-B680-EEA4A250632E",
  "children": [
   "Algorithm",
@@ -15,6 +15,7 @@
   "git",
   "How-to",
   "Java",
+  "JS_TS",
   "Reading",
   "Spring",
   "terminology",

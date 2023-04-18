@@ -3,7 +3,7 @@ layout  : wiki
 title   : Wiki
 summary : 
 date    : 2023-01-09 15:24:31 +0900
-updated : 2023-04-15 15:15:01 +0900
+updated : 2023-04-18 23:05:18 +0900
 tag     : 
 resource: 38/1839B7-F38A-4961-B680-EEA4A250632E
 toc     : true
@@ -45,6 +45,9 @@ comment : false
 * [[/Spring/Spring-package]]
 * [[/Spring/Spring-configuration]]
 
+## [[JS_TS]]
+- [[JS_TS/JS_promise]]
+
 ## [[DataBase]]
 * [[/DataBase/connection-pool]]
 * [[/DataBase/Transaction]]
@@ -53,7 +56,6 @@ comment : false
 * [[/DataBase/JPA_flush]]
 * [[/DataBase/JPA_Proxy]]
 
-ddd
 
 ## [[Document]]
 * [[/Document/google-styleguide]]

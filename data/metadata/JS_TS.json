@@ -1,0 +1,12 @@
+{
+ "type": "wiki",
+ "title": "JS/TS",
+ "summary": "",
+ "parent": "index",
+ "url": "/wiki/JS_TS",
+ "updated": "2023-04-18 23:00:27 +0900",
+ "resource": "36/556902-049A-4A5F-A834-0DB1BC638C62",
+ "children": [
+  "JS_TS/JS_promise"
+ ]
+}
