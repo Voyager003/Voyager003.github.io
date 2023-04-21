@@ -20,6 +20,7 @@
  "java/hash-map",
  "java/java_class",
  "java/java_controlstatement",
+ "java/java_inheritance",
  "java/java_operator",
  "java/java_throwable",
  "java/java_type",
