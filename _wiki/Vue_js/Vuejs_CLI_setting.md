@@ -92,8 +92,6 @@ latex   : false
 
 ### Vuex
 
-> add vuex
-
 - Vue js 애플리케이션에서 상태 관리를 위한 공식 라이브러리이다.
 - 애플리케이션의 모든 컴포넌트에 대한 중앙 집중식 저장소 역할을 하며, 상태를 변경할 수 있다.
 - 옵션 선택 시, 라이브러리에 Vuex를 추가한다.
@@ -121,8 +119,8 @@ latex   : false
 - Linter는 코드 스타일과 잠재적 오류를 검사하는 도구이다. 
 - formatter는 코드를 일관된 스타일로 자동으로 정렬하여 가독성을 향상시키는 도구이다. 
 
-> Pick additional lint features: \\
-> ❯◉ Lint on save
+> Pick additional lint features: \
+> ❯◉ Lint on save \
 > ◯ Lint and fix on commit
 
 - Linter에 추가할 기능 여부를 묻는 옵션이다.
@@ -141,9 +139,9 @@ latex   : false
 ### E2E Testing
 
 >  Pick an E2E testing solution: \
-> ❯ Cypress (Test in Chrome, Firefox, MS Edge, and Electron)
-> Nightwatch (WebDriver-based)
-> WebdriverIO (WebDriver/DevTools based)
+> ❯ Cypress (Test in Chrome, Firefox, MS Edge, and Electron) \
+> Nightwatch (WebDriver-based) \
+> WebdriverIO (WebDriver/DevTools based) 
 
 - 사용자가 애플리케이션을 사용하는 것과 유사한 시나리오에서 전체 애플리케이션을 테스트하는 사용된다.
 - 옵션 선택 시, 해당 테스트 프레임워크를 추가한다.
@@ -155,7 +153,7 @@ latex   : false
 > In package.json
 
 - In dedicated config files는 Babel, ESLint 등의 구성 파일을 별도의 파일에 저장한다. 
-  - 선택 시, Vue CLI가 자동으로 해당 파일을 생성합니다.
+  - 선택 시, Vue CLI가 자동으로 해당 파일을 생성한다.
 - In package.json: Babel, ESLint 등의 구성 파일을 package.json 파일 내부에 저장한다.
   - 선택 시, package.json 파일 내부의 "babel", "eslint" 등의 속성에 구성 정보가 저장된다.
 
