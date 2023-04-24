@@ -3,7 +3,7 @@ layout  : wiki
 title   : Wiki
 summary : 
 date    : 2023-01-09 15:24:31 +0900
-updated : 2023-04-22 21:58:51 +0900
+updated : 2023-04-24 14:30:41 +0900
 tag     : 
 resource: 38/1839B7-F38A-4961-B680-EEA4A250632E
 toc     : true
@@ -48,6 +48,9 @@ comment : false
 
 ## [[JS_TS]]
 - [[JS_TS/JS_promise]]
+
+## [[Vue_js]]
+- [[Vue_js/Vuejs_CLI_setting]]
 
 ## [[DataBase]]
 * [[/DataBase/connection-pool]]
