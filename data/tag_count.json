@@ -20,6 +20,10 @@
   "size": 1
  },
  {
+  "name": "effectivejava",
+  "size": 1
+ },
+ {
   "name": "git",
   "size": 1
  },
@@ -29,7 +33,7 @@
  },
  {
   "name": "java",
-  "size": 31
+  "size": 32
  },
  {
   "name": "jdbc",

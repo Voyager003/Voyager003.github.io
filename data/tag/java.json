@@ -17,6 +17,7 @@
  "DataBase/JPA_Proxy",
  "DataBase/Transaction",
  "DataBase/Transaction_AOP",
+ "java/effective_item1",
  "java/hash-map",
  "java/java_class",
  "java/java_controlstatement",
