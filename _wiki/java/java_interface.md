@@ -113,7 +113,7 @@ interface Runnable{
 }
 
 interface Jumpable {
-	 void jump();
+    void jump();
 }
 
 class Human implements Runnable, Jumpable {
@@ -123,10 +123,10 @@ class Human implements Runnable, Jumpable {
         System.out.println("Human's run");
     }
     
-	@Override
-	public void jump() {
+    @Override
+    public void jump() {
         System.out.println("Human's Jumping");
-	}
+    }
 }
 ```
 
@@ -134,7 +134,7 @@ Human이라는 인스턴스를 사용한다고 해보자.
 
 ```java
 Runnable human = new Human();
-human.fly();
+human.run();
 human.jump(); // Cannot resolve method 'jump' in 'Runnable'
 ```
 
