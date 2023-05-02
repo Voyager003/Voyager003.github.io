@@ -22,6 +22,7 @@
  "java/java_class",
  "java/java_controlstatement",
  "java/java_inheritance",
+ "java/java_interface",
  "java/java_operator",
  "java/java_package",
  "java/java_throwable",

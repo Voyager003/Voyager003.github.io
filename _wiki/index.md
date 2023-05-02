@@ -3,7 +3,7 @@ layout  : wiki
 title   : Wiki
 summary : 
 date    : 2023-01-09 15:24:31 +0900
-updated : 2023-04-30 16:22:51 +0900
+updated : 2023-05-02 12:04:55 +0900
 tag     : 
 resource: 38/1839B7-F38A-4961-B680-EEA4A250632E
 toc     : true
@@ -39,7 +39,9 @@ comment : false
 * [[/java/java_class]]
 * [[/java/java_inheritance]]
 * [[/java/java_package]]
+* [[/java/java_interface]]
 
+### Effective Java
 * [[/java/effective_item1]]
 
 ## [[Spring]]
