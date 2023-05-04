@@ -89,19 +89,19 @@ BUILD SUCCESSFUL
     - Wrapper는 각 OS에 맞춰 build를 수행하도록하는 배치 스크립트이다.
     - Gradle Wrapper의 스크립트는 명시된 Gradle 버전을 호출하고, 자동으로 설치하여 빌드를 실행한다.
       - **gradle-wrapper.jar**는 wrapper 파일로, gradlew나 gradlew.bat 파일이 프로젝트 내에 설치하는 이 파일을 사용하여 gradle task를 실행하기 때문에 로컬 환경의 영향을 받지 않는다.
-      - 실제로는 Wrapper 버전에 맞는 구성들을 로컬 캐시에 다운로드 받음)
-      - **gradle-wrapper.properties** 는 Wrapper의 설정 파일로, 이 파일의 wrapper 버전 등을 변경하면 task 실행시, 자동으로 새로운 Wrapper 파일을 로컬 캐시에 다운로드 받음.
-- gradlew 파일은 unidex용 실행 스크립트이다.
+      - 이는 실제로 Wrapper 버전에 맞는 구성들을 로컬 캐시에 다운로드 받는다.
+      - **gradle-wrapper.properties** 는 Wrapper의 설정 파일로, 이 파일의 wrapper 버전 등을 변경하면 task 실행시, 자동으로 새로운 Wrapper 파일을 로컬 캐시에 다운로드 받는다.
+- gradlew 파일은 unix용 실행 스크립트이다.
   - gradle로 컴파일 혹은 빌드 시, > gradle build 실행 시, 로컬에 설치된 gradle을 사용한다.
-  - 이 경우 Java나 Gradle이 설치되어 있어야 하고, 새로받은 프로젝트의 Gradle 버전과 로컬에 설치된 Gradle 버전이 호환되지 않으면 문제가 발생할 수 있음. 따라서 Wrapper를 사용하면 아래와 같이 실행.
-  - ./gradlew build
-- gradle.bat 파일은 윈도우용 실행 배치 스크립트이다.
-  - 윈도우에서 실행 가능하다는 점만 제외하면 gradlew와 동일하다.
+  - 이 경우 Java나 Gradle이 설치되어 있어야 하고, 새로받은 프로젝트의 Gradle 버전과 로컬에 설치된 Gradle 버전이 호환되지 않으면 문제가 발생할 수 있다. 
+  - 따라서 Wrapper를 사용하면 다음과 같이 실행한다. > ./gradlew build
+- gradle.bat 파일은 window용 실행 배치 스크립트이다.
+  - window에서 실행 가능하다는 점만 제외하면 gradlew와 동일하다.
 - build.gradle은 의존성 및 플러그인 설정을 위한 스크립트 파일이다.
 - settings.gradle 파일은 프로젝트의 구성 정보를 기록하는 파일이다.
   - 하위 프로젝트들이 어떤 관계로 구성되어 있는지 서술한다.
-  - gradle은 이를 보고 프로젝트를 구성한다.
-g
+  - gradle은 이를 참조하여 프로젝트를 구성한다.
+
 ## 참고자료
 
 - https://github.com/gradle/gradle - gradle 레포
