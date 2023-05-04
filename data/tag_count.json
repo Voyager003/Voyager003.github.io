@@ -21,10 +21,14 @@
  },
  {
   "name": "effectivejava",
-  "size": 1
+  "size": 2
  },
  {
   "name": "git",
+  "size": 1
+ },
+ {
+  "name": "gradle",
   "size": 1
  },
  {
@@ -33,7 +37,7 @@
  },
  {
   "name": "java",
-  "size": 33
+  "size": 34
  },
  {
   "name": "jdbc",
@@ -78,6 +82,10 @@
  {
   "name": "terminology",
   "size": 4
+ },
+ {
+  "name": "tool",
+  "size": 1
  },
  {
   "name": "topic",

@@ -4,7 +4,7 @@
  "summary": "",
  "parent": "",
  "url": "/wiki/index",
- "updated": "2023-05-02 12:04:55 +0900",
+ "updated": "2023-05-04 21:08:14 +0900",
  "resource": "38/1839B7-F38A-4961-B680-EEA4A250632E",
  "children": [
   "Algorithm",
@@ -19,6 +19,7 @@
   "Reading",
   "Spring",
   "terminology",
+  "Tool",
   "Topic",
   "Vue_js"
  ]
