@@ -37,7 +37,7 @@
  },
  {
   "name": "java",
-  "size": 36
+  "size": 38
  },
  {
   "name": "jdbc",
@@ -58,6 +58,10 @@
  {
   "name": "linkedlist",
   "size": 1
+ },
+ {
+  "name": "pattern",
+  "size": 2
  },
  {
   "name": "queue",
