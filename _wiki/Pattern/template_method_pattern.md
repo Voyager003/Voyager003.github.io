@@ -188,16 +188,16 @@ public abstract class CaffeineBeverage {
 
 템플릿 메서드의 알고리즘이 추가되어 복잡해진다면, 템플릿을 유지하기 어려워진다. 
 
-## 각주
-
-[^1] : 토비의 스프링 3.1, 3장 템플릿
-
-[^2] Defines the skeleton of an algorithm in a method, deferring some steps to subclasses. Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithms structure. - GOF Design Patterns
-
-[^3] : 토비의 스프링 3.1, 3장 템플릿
-
 ## 참고자료
 
 - 토비의 스프링 3.1
 - https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EA%B3%A0%EA%B8%89%ED%8E%B8/dashboard - 김영한님의 스프링 핵심원리 고급편
 - https://johngrib.github.io/wiki/pattern/template-method/ - 예제 코드
+
+## 각주
+
+[^1]: 토비의 스프링 3.1, 3장 템플릿
+
+[^2]: Defines the skeleton of an algorithm in a method, deferring some steps to subclasses. Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithms structure. - GOF Design Patterns
+
+[^3]: 토비의 스프링 3.1, 3장 템플릿
