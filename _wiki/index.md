@@ -3,7 +3,7 @@ layout  : wiki
 title   : Wiki
 summary : 
 date    : 2023-01-09 15:24:31 +0900
-updated : 2023-05-16 00:28:24 +0900
+updated : 2023-05-17 22:35:04 +0900
 tag     : 
 resource: 38/1839B7-F38A-4961-B680-EEA4A250632E
 toc     : true
@@ -41,6 +41,7 @@ comment : false
 * [[/java/java_package]]
 * [[/java/java_interface]]
 * [[/java/multi_thread_programming]]
+* [[/java/java_enum]]
 
 ### Effective Java
 * [[/java/effective_item1]]
@@ -67,6 +68,9 @@ comment : false
 * [[/DataBase/JPA_entity]]
 * [[/DataBase/JPA_flush]]
 * [[/DataBase/JPA_Proxy]]
+
+## [[Pattern]]
+* [[Pattern/template_method_pattern]]
 
 ## [[Tool]]
 * [[/Tool/Gradle]]
