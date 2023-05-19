@@ -73,22 +73,25 @@ public @interface AnnotationName {
   - @Documented : 애노테이션에 대한 정보가 javadoc으로 작성한 문서에 포함되도록 한다.
   - @Inherited : 애노테이션이 sub class에 상속되도록 한다.
   - @Repeatable : 애노테이션을 여러 번 명시할 수 있다.
+  
     ```java
-    @Repeatable(AnnotationName.class)@Repeatable(ToDos.class)
+    @Repeatable(ToDos.class)
     @interface ToDo {
         String value();
     }
     
-    @ToDo("..")
+    @ToDo("delete test codes.")
     @ToDo("override inherited methods")
     class MyClass{
-       ..
+        ..
     }
     ```
+    
     - 애노태에션 여러 개가 하나의 대상에 적용될 수 있기 때문에, 하나로 묶어서 다룰 수 있는 애노테이션을 추가로 정의해야 한다
+    
     ```java
-    @interface ToDos{   // 여러 개의 ToDo 애노테이션을 담을 컨테이너 애노테이션
-	    ToDo[] value(); // ToDo애너테이션 배열타입의 요소를 선언하고, "이름이 반드시 value"
+    @interface ToDos {   // 여러 개의 ToDo 애노테이션을 담을 컨테이너 애노테이션
+	    ToDo[] value();   // ToDo 애노테이션 배열타입의 요소를 선언. "이름이 반드시 value"
     }
 
     @Repeatable(ToDos.class)
