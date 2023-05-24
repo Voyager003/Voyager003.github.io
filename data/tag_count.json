@@ -77,7 +77,11 @@
  },
  {
   "name": "spring",
-  "size": 5
+  "size": 6
+ },
+ {
+  "name": "springsecurity",
+  "size": 1
  },
  {
   "name": "stack",

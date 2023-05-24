@@ -3,5 +3,6 @@
  "Spring/Spring-configuration",
  "Spring/Spring-mvc",
  "Spring/Spring-mvc2",
- "Spring/Spring-package"
+ "Spring/Spring-package",
+ "Spring/SpringSecurity-oauth2"
 ]

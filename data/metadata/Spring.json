@@ -9,6 +9,7 @@
  "children": [
   "Spring/Spring-configuration",
   "Spring/Spring-mvc",
-  "Spring/Spring-mvc2"
+  "Spring/Spring-mvc2",
+  "Spring/SpringSecurity-oauth2"
  ]
 }

@@ -3,7 +3,7 @@ layout  : wiki
 title   : Wiki
 summary : 
 date    : 2023-01-09 15:24:31 +0900
-updated : 2023-05-23 11:01:28 +0900
+updated : 2023-05-23 15:43:56 +0900
 tag     : 
 resource: 38/1839B7-F38A-4961-B680-EEA4A250632E
 toc     : true
@@ -57,6 +57,7 @@ comment : false
 * [[/Spring/Spring-Annotation]]
 * [[/Spring/Spring-package]]
 * [[/Spring/Spring-configuration]]
+* [[/Spring/SpringSecurity-oauth2]]
 
 ## [[JS_TS]]
 - [[JS_TS/JS_promise]]
