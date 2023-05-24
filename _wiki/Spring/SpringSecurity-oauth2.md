@@ -26,14 +26,23 @@ latex   : false
 ![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*62sgUdt_hB1ZCKNYzvJNaA.jpeg)
 
 1) 사용자가 폼에 아이디, 패스워드 입력 시 HttpServletRequest에 아이디와 패스워드 정보가 전달된다. 이 때 AuthenticationFilter가 요청을 가로채 유효성 검사를 실행
+
 2) 유효성 검사가 끝나면 구현체인 UsernamePasswordAuthenticationToken을 생성 (상태 : 미검증 Authentication)
+
 3) AuthenticationManager의 구현체인 ProviderManager에게 생성한 토큰을 전달
+
 4) AuthenticationManager는 등록된 AuthenticationProvider를 조회하여 인증을 요청
+
 5) 실제 DB로부터 사용자 인증 정보를 가져오는 UserDetailsService를 호출하여 사용자 정보를 전달
+
 6) 전달받은 사용자 정보를 통해 UserDetails DB에서 찾은 사용자 정보인 UserDetails 객체 생성
+
 7) AuthenticationProvider는 UserDetails를 넘겨받고 입력 정보와 UserDetails의 정보를 비교해 인증 처리
+
 8) 인증이 완료되면 사용자 정보를 담은 Authentication 객체를 반환 (상태 : 검증 Authentication)
+
 9) 최초의 AuthenticationFilter에 Authentication이 반환됨
+
 10) 검증된 Authentication 객체를 SecurityContext에 저장 
 
 - 이 때 **6.** 에서 UserDetailsService와 UserDetails의 실질적 인증 과정은 사용자가 입력한 데이터와 UserDetailsService의 loadUserByUsername()이 반환하는 UserDetails 객체를 비교함으로써 동작한다.
