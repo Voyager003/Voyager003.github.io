@@ -26,6 +26,7 @@
  "java/java_class",
  "java/java_controlstatement",
  "java/java_enum",
+ "java/java_generic",
  "java/java_inheritance",
  "java/java_interface",
  "java/java_io",
