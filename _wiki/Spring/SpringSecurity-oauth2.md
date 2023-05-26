@@ -23,7 +23,7 @@ latex   : false
 - 필터 실행 시, 화살표로 연결된 클래스를 거치면서 실행하며, 특정 필터를 제거하거나 필터 뒤에 커스텀 필터를 넣는 설정이 가능하다.
 - 기본 폼 로그인 사용 시, 진행되는 흐름은 다음과 같다.
 
-![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*62sgUdt_hB1ZCKNYzvJNaA.jpeg)
+<img width="764" alt="스크린샷 2023-05-23 오후 4 42 41" src="https://github.com/Voyager003/PracticeCode/assets/85725033/ff3b07e7-c905-4d0e-92d2-a2ee14dd4d07">
 
 1) 사용자가 폼에 아이디, 패스워드 입력 시 HttpServletRequest에 아이디와 패스워드 정보가 전달된다. 이 때 AuthenticationFilter가 요청을 가로채 유효성 검사를 실행
 
