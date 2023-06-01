@@ -36,6 +36,7 @@
  "java/java_throwable",
  "java/java_type",
  "java/JVM",
+ "java/lambda",
  "java/multi_thread_programming",
  "Pattern/template_method_pattern",
  "Spring/Spring-mvc",
