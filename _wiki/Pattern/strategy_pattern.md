@@ -1,8 +1,9 @@
+---
 layout  : wiki
 title   : 전략 패턴 
 summary : 
 date    : 2023-06-02 10:37:43 +0900
-updated : 2023-06-02 15:02:48 +0900
+updated : 2023-06-02 15:07:31 +0900
 tag     : java pattern
 resource: E1/4646A2-B0FF-43DC-83C3-A64FC59FF63E
 toc     : true

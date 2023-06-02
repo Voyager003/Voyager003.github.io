@@ -1,4 +1,5 @@
 [
  "Pattern",
+ "Pattern/strategy_pattern",
  "Pattern/template_method_pattern"
 ]
