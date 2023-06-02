@@ -3,7 +3,7 @@ layout  : wiki
 title   : Wiki
 summary : 
 date    : 2023-01-09 15:24:31 +0900
-updated : 2023-06-01 09:40:56 +0900
+updated : 2023-06-02 10:38:42 +0900
 tag     : 
 resource: 38/1839B7-F38A-4961-B680-EEA4A250632E
 toc     : true
@@ -77,7 +77,8 @@ comment : false
 * [[/DataBase/JPA_Proxy]]
 
 ## [[Pattern]]
-* [[Pattern/template_method_pattern]]
+* [[/Pattern/template_method_pattern]]
+* [[/Pattern/strategy_pattern]]
 
 ## [[Tool]]
 * [[/Tool/Gradle]]
