@@ -20,6 +20,10 @@
   "size": 1
  },
  {
+  "name": "effecitivejava",
+  "size": 1
+ },
+ {
   "name": "effecitvejava",
   "size": 1
  },
@@ -41,7 +45,7 @@
  },
  {
   "name": "java",
-  "size": 46
+  "size": 47
  },
  {
   "name": "jdbc",
