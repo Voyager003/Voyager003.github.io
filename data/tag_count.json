@@ -64,6 +64,10 @@
   "size": 1
  },
  {
+  "name": "jwt",
+  "size": 1
+ },
+ {
   "name": "linkedlist",
   "size": 1
  },
@@ -85,11 +89,11 @@
  },
  {
   "name": "spring",
-  "size": 6
+  "size": 7
  },
  {
   "name": "springsecurity",
-  "size": 1
+  "size": 2
  },
  {
   "name": "stack",
@@ -114,5 +118,9 @@
  {
   "name": "Vue_js",
   "size": 2
+ },
+ {
+  "name": "vuejs",
+  "size": 1
  }
 ]

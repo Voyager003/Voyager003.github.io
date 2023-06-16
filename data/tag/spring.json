@@ -4,5 +4,6 @@
  "Spring/Spring-mvc",
  "Spring/Spring-mvc2",
  "Spring/Spring-package",
+ "Spring/SpringSecurity_JWT_Signup",
  "Spring/SpringSecurity-oauth2"
 ]
