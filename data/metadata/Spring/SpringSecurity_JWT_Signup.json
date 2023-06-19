@@ -1,10 +1,10 @@
 {
  "type": "wiki",
- "title": "Spring Security, Vue js, JWT 토큰 기반 인증 방식으로 회원가입, 로그인 구현하기",
+ "title": "Spring Security, Vue js, JWT 토큰 기반 인증 방식으로 회원가입, 로그인 구현하기 (1)",
  "summary": "",
  "parent": "spring",
  "url": "/wiki/Spring/SpringSecurity_JWT_Signup",
- "updated": "2023-06-16 15:38:34 +0900",
+ "updated": "2023-06-18 22:44:48 +0900",
  "resource": "6C/EAB720-5952-496D-9975-1E89FDCCE89B",
  "children": []
 }
