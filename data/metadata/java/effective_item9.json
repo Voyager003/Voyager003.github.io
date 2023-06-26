@@ -1,0 +1,10 @@
+{
+ "type": "wiki",
+ "title": "try-finally보다는 try-with-resources를 사용하라",
+ "summary": "",
+ "parent": "java",
+ "url": "/wiki/java/effective_item9",
+ "updated": "2023-06-26 11:59:00 +0900",
+ "resource": "7D/A8AD28-1EDF-4F7F-A81C-91C9D8A12C66",
+ "children": []
+}
