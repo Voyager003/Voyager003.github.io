@@ -41,11 +41,11 @@
  },
  {
   "name": "hash",
-  "size": 2
+  "size": 1
  },
  {
   "name": "java",
-  "size": 49
+  "size": 48
  },
  {
   "name": "jdbc",
@@ -81,7 +81,7 @@
  },
  {
   "name": "reading",
-  "size": 10
+  "size": 11
  },
  {
   "name": "sorting-algorithm",
