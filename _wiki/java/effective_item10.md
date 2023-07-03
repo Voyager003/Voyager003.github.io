@@ -262,7 +262,9 @@ list.contains(s); // ?
 
 contain(s)는 내부적으로 equals()를 사용하기 때문에, false를 반환한다. (이 때, item10에서는 이는 순전히 구현하기 나름이라 JDK 버전이 바뀌거나 다른 JDK에서는 true를 반환 혹은 런타임 예외를 던질 수 있다고 말한다.)
 
-equals 규약을 어기면 그 인스턴스를 사용하는 다른 인스턴스들이 어떻게 반응할 지 알 수가 없다. 그렇다면 equals를 어떻게 구현해야 할까?
+equals 규약을 어기면 그 인스턴스를 사용하는 다른 인스턴스들이 어떻게 반응할 지 알 수가 없다. 
+
+그렇다면 equals를 어떻게 구현해야 할까?
 
 ```java
 @Override
@@ -271,8 +273,10 @@ public boolean equals(Object o) {
     ((CaseInsensitiveString) o).s.equalsIgnoreCase(s);
 }
 ```
+이 문제를 해결하려면 CaseInsensitiveString의 equlas를 String과도 연동하는 것은 포기해야 한다.
 
-위 코드는 
+그 결과는 위와 같다.
+
 
 ### 추이성(transitivity)
 
