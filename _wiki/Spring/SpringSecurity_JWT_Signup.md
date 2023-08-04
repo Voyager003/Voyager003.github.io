@@ -543,6 +543,11 @@ public class SecurityConfig {
     }
 
     @Bean
+    public AuthenticationManager authenticationManagerBean(AuthenticationConfiguration authConfig) throws Exception {
+        return authConfig.getAuthenticationManager();
+    }
+
+    @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.csrf(AbstractHttpConfigurer::disable)
                 .exceptionHandling(exception -> exception
@@ -582,7 +587,20 @@ Spring boot 2.7.3 이전에는 WebSecurityConfigurerAdapter를 상속받아 conf
 
 DaoAuthenticationProvider는 UserDetails 및 Password Encoder를 사용해 사용자 아이디와 암호를 인증하는 AuthenticationProvider의 구현체이다.
 
-UserDetails에서 UserDetails를 조회하고, PasswordEncoder를 사용해 UserDetails의 암호를 확인한다. 이 때 인증이 성공하여 반환되는 인증은 UsernamePasswordAuthenticationToken이며 UserDetails의 정보를 가진다. 이는 인증 필터에 의해 최종적으로 SecurityContextHolder에 설정된다. 
+UserDetails에서 UserDetails를 조회하고, PasswordEncoder를 사용해 UserDetails의 암호를 확인한다. 이 때 인증이 성공하여 반환되는 인증은 UsernamePasswordAuthenticationToken이며 UserDetails의 정보를 가진다. 이는 인증 필터에 의해 최종적으로 SecurityContextHolder에 설정된다.
+
+### AuthenticationManager
+
+<img width="634" alt="스크린샷 2023-08-04 오후 12 02 26" src="https://github.com/Voyager003/toy-shoppingmall/assets/85725033/7b29553d-a422-46f8-82cf-0c94e6539f9d">
+
+AuthenticationManager는 Filter로부터 인증 처리를 지시받는 첫 번째 클래스이다.
+
+이름 그대로 일종의 관리자 역할을 하며, AuthenticationFilter에 의해 AuthenticationManager가 동작하고 인증을 처리하면 SecurityContextHolder에 
+Authentication 값이 세팅된다.
+
+그림의 ProviderManager는 AuthenticatinoManager의 일반적인 구현체로 AuthenticationProvider 목록을 위임받는다.
+
+위임받은 Provider는 인증 성공, 실패를 결정 역할을 한다.
 
 ### SecurityFilterChain
 
