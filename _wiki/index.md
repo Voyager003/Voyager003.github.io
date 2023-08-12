@@ -3,7 +3,7 @@ layout  : wiki
 title   : Wiki
 summary : 
 date    : 2023-01-09 15:24:31 +0900
-updated : 2023-08-06 23:32:55 +0900
+updated : 2023-08-12 19:46:50 +0900
 tag     : 
 resource: 38/1839B7-F38A-4961-B680-EEA4A250632E
 toc     : true
@@ -74,6 +74,7 @@ comment : false
 * [[/Spring/SpringSecurity-oauth2]]
 * [[/Spring/SpringSecurity_JWT_Signup]]
 * [[/Spring/SpringSecurity_JWT_2]]
+* [[/Spring/Spring_Test_Strategy]]
 
 ## [[JS_TS]]
 - [[JS_TS/JS_promise]]
@@ -112,6 +113,7 @@ comment : false
 * [[/Reading/23_07_01]]
 * [[/Reading/23_07_21]]
 * [[/Reading/23_07_30]]
+* [[/Reading/23_08_12]]
 
 ## [[terminology]]
 * [[/terminology/build-cicd]]
