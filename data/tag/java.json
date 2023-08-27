@@ -52,6 +52,7 @@
  "java/multi_thread_programming",
  "Pattern/strategy_pattern",
  "Pattern/template_method_pattern",
+ "Spring/Spring_MultiPart",
  "Spring/Spring-mvc",
  "Spring/Spring-package",
  "terminology/binding",
