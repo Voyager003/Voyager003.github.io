@@ -8,6 +8,7 @@
  "resource": "30/8B5F80-9715-4442-941D-522689576D21",
  "children": [
   "Spring/Spring_MultiPart",
+  "Spring/Spring_Paging",
   "Spring/Spring-configuration",
   "Spring/Spring-mvc",
   "Spring/Spring-mvc2",
