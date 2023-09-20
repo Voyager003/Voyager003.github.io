@@ -3,7 +3,7 @@ layout  : wiki
 title   : Wiki
 summary : 
 date    : 2023-01-09 15:24:31 +0900
-updated : 2023-09-13 19:15:25 +0900
+updated : 2023-09-18 09:41:50 +0900
 tag     : 
 resource: 38/1839B7-F38A-4961-B680-EEA4A250632E
 toc     : true
@@ -71,6 +71,7 @@ comment : false
 * [[/java/effective_item21]]
 * [[/java/effective_item22]]
 * [[/java/effective_item23]]
+* [[/java/effective_item24]]
 
 ## [[Spring]]
 * [[/Spring/Spring-mvc]]
@@ -83,6 +84,7 @@ comment : false
 * [[/Spring/SpringSecurity_JWT_2]]
 * [[/Spring/Spring_Test_Strategy]]
 * [[/Spring/Spring_MultiPart]]
+* [[/Spring/Spring_Paging]]
 
 ## [[JS_TS]]
 - [[JS_TS/JS_promise]]
