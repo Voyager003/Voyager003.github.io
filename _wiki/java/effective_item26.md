@@ -3,7 +3,7 @@ layout  : wiki
 title   : 로 타입(Raw type)은 사용하지 말라 
 summary : 
 date    : 2023-10-01 10:29:07 +0900
-updated : 2023-10-02 12:17:57 +0900
+updated : 2023-10-03 10:11:17 +0900
 tag     : java effectivejava
 resource: 9A/0B9F2E-7744-45E5-BA01-1267375756D4
 toc     : true
