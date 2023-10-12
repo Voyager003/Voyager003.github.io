@@ -3,7 +3,7 @@ layout  : wiki
 title   : Wiki
 summary : 
 date    : 2023-01-09 15:24:31 +0900
-updated : 2023-10-09 09:49:29 +0900
+updated : 2023-10-12 20:36:04 +0900
 tag     : 
 resource: 38/1839B7-F38A-4961-B680-EEA4A250632E
 toc     : true
@@ -76,6 +76,7 @@ comment : false
 * [[/java/effective_item26]]
 * [[/java/effective_item27]]
 * [[/java/effective_item28]]
+* [[/java/effective_item29]]
 
 
 ## [[Spring]]
