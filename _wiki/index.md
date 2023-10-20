@@ -3,7 +3,7 @@ layout  : wiki
 title   : Wiki
 summary : 
 date    : 2023-01-09 15:24:31 +0900
-updated : 2023-10-16 11:05:18 +0900
+updated : 2023-10-20 09:29:25 +0900
 tag     : 
 resource: 38/1839B7-F38A-4961-B680-EEA4A250632E
 toc     : true
@@ -147,3 +147,4 @@ comment : false
 * [[/Topic/23-trend]]
 * [[/Topic/The_Ageof_AI_has_begun]]
 * [[/Topic/stanford_lecture]]
+* [[/Topic/habits_of_the_top_engineers]]
