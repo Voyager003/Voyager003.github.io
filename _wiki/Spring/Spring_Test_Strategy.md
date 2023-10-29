@@ -3,7 +3,7 @@ layout  : wiki
 title   : Spring 테스트 전략
 summary : 
 date    : 2023-08-07 20:45:42 +0900
-updated : 2023-08-13 23:15:55 +0900
+updated : 2023-10-29 22:27:05 +0900
 tag     : spring
 resource: 48/1D2CE5-6975-4D07-84CA-A179F2E116BA
 toc     : true
@@ -14,11 +14,11 @@ latex   : false
 * TOC
 {:toc}
 
-## 개요
+## 서론
 
-Spring은 다양한 테스트 기능을 제공하는데, 단위 테스트 및 통합 테스트를 어떻게 작성하는지 정리할 겸 글을 작성했다.
+Spring은 테스트를 위한 다양한 기능을 제공하는데, 이를 정리할 겸 글을 작성했다.
 
-설명에 앞서 통합 테스트와 단위 테스트에 대한 정의와 Test double에 대해 숙지하고 가자.
+설명에 앞서 테스트 코드를 이해하기 위해 필요한 개념을 숙지하고 가자.
 
 ### 단위 테스트(Unit Test) vs 통합 테스트(Integration Test)
 
@@ -55,7 +55,7 @@ public void moveCar() {
 
 통합 테스트로 얻을 수 있는 장점은 Spring Container에 등록된 Bean을 가지고 테스트를 하기 때문에, 운영 환경과 유사하게 테스트 가능하며, API 테스트 시 요청에서 응답까지 전체적인 테스트를 할 수 있다. 
 
-그에 따라 단점도 수반하는데, 그만큼 Bean을 등록하여 테스트를 진행하기 때문에 테스트 시간이 오래걸리며 무겁다는 점이다. 
+그에 따라 단점도 수반하는데, 그만큼 Bean을 등록하여 테스트를 진행하기 때문에 테스트 시간이 오래걸리며 무겁다는 점이다.
 
 ### Test Double
 
@@ -307,13 +307,98 @@ Mock 객체를 사용해 EmailService의 메서드 호출과 결과를 시뮬레
 
 상태와 행위를 검증한다는 차이점에 초점을 두자.
 
-## 
+### 고전적 테스팅과 모의객체 테스팅(Classical and Mockist Testing)
 
+Mockist와 Classicist는 각각 다른 접근 방식을 가진 테스트 방법론이다.
 
+Mockist는 테스트 코드 작성 시에 TestDouble에서 설명한 Mock, 즉 관심있는 행위를 가진 모든 객체에 Mock 객체를 사용하는 것이다. [^1] 
+
+쉽게 말해 실제 의존 클래스로부터 격리된 테스트를 말한다. Mockist 관점은 행위를 검증한다는 특징이 있다. 코드로 살펴보자.
+
+```java
+public interface CalculatorService {
+    int add(int a, int b);
+}
+
+public class Calculator {
+    private CalculatorService service;
+
+    public Calculator(CalculatorService service) {
+        this.service = service;
+    }
+
+    public int calculate(int a, int b) {
+        return service.add(a, b);
+    }
+}
+
+public class CalculatorTest {
+    @Test
+    public void testCalculate() {
+        CalculatorService mockService = mock(CalculatorService.class);
+        when(mockService.add(2, 3)).thenReturn(5);
+
+        Calculator calculator = new Calculator(mockService);
+        int result = calculator.calculate(2, 3);
+
+        assertEquals(5, result);
+        verify(mockService).add(2, 3);
+    }
+}
+```
+
+간단한 계산기를 테스트하는 코드이다. 
+
+Mockist 테스팅은 CalculatorService의 add() 메서드를 호출할 때 반환할 값을 설정하고, 테스트가 끝난 후에 add() 메서드가 예상대로 호출되었는지를 검증한다. 이는 '어떤 입력이 주어졌을 때, 테스트 대상이 의존하는 객체와 예상대로 상호작용하는가?'를 검증하게 된다. 즉 객체 내부의 상태를 확인하는 것이 아닌 특정 행동이 이뤄졌는지 행위 검증(Behavior Verification)을 한다는 것이다.
+
+반면 Classicist의 테스트 방식은 진짜 객체를 사용하며, 진짜 객체를 사용하기 곤란하다면 double(test double)을 사용한다. [^2]
+
+```java
+public class Calculator {
+    public int add(int a, int b) {
+        return a + b;
+    }
+}
+
+public class CalculatorTest {
+    @Test
+    public void testAdd() {
+        Calculator calculator = new Calculator();
+        int result = calculator.add(2, 3);
+        assertEquals(5, result);
+    }
+}
+```
+
+Classicist 관점에서는 add() 메서드가 수행된 뒤에 result의 내부 상태를 검증하고 있다. 
+
+쉽게 말해 메서드나 행동이 수행된 뒤에 객체 내부의 상태를 검증(State-based)하는 것이다.
+
+행위(메서드 호출이 끝난 뒤)가 끝난 후에 상태를 직접적으로 검증하기 때문에 테스테에 대한 안정감을 높일 수 있다는 특징이 있다.
+
+이는 정답이 없는 방법론이기때문에 각 상황에 따라 Classicist가 더 좋을 수도 있고, Mockist 관점이 더 좋은 코드를 만들어 낼 수도 있다.
+
+## Spring이 제공하는 Annotation
+
+Spring은 테스트 환경을 위해 다양한 Annotation을 제공한다.
+
+각 Annotation의 특징과 사용법을 알아보자. 
+
+1. 
+
+## 마무리
+
+이 문서는 계속 갱신되고 있습니다.
 
 ## 참고자료
 
 - https://tecoble.techcourse.co.kr/post/2021-05-25-unit-test-vs-integration-test-vs-acceptance-test/ - Tecoble의 단위테스트 vs 통합테스트
 - https://martinfowler.com/bliki/TestDouble.html - Test Double
 - https://martinfowler.com/articles/mocksArentStubs.html - Mocks aren't stub
+- https://agilewarrior.wordpress.com/2015/04/18/classical-vs-mockist-testing/
 
+## 주석 
+
+[^1]: mockist TDD practitioner, however, will always use a mock for any object with interesting behavior.
+
+[^2]: The classical TDD style is to use real objects if possible and a double if it's awkward to use the real thing.
