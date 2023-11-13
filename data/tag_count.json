@@ -32,6 +32,10 @@
   "size": 32
  },
  {
+  "name": "effectviejava",
+  "size": 1
+ },
+ {
   "name": "gradle",
   "size": 1
  },
@@ -41,7 +45,7 @@
  },
  {
   "name": "java",
-  "size": 74
+  "size": 75
  },
  {
   "name": "jdbc",
