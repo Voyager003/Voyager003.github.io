@@ -3,7 +3,7 @@ layout  : wiki
 title   : JDK 21의 가상 스레드
 summary : 
 date    : 2023-12-12 20:12:07 +0900
-updated : 2023-12-12 23:25:05 +0900
+updated : 2023-12-12 23:36:08 +0900
 tag     : 
 resource: E3/70B74E-1CAC-4F74-B868-CD4548CD6587
 toc     : true
@@ -99,10 +99,6 @@ sealed abstract class BaseVirtualThread extends Thread
 실제 코드를 작성할 때 low level을 직접 핸들링 하는 경우는 없다.
 
 ExceutorService의 newVirtualThreadPerTaskExecutor() 메서드가 추가되었는데, 이는 가상스레드로 동작 유무를 확인할 수 있다.
-
-Spring에서 설정할 수 있는 방법은 다음과 같다. (Spring boot 3.x)
-
-![스크린샷 2023-12-12 오후 7 46 35](https://github.com/Voyager003/Voyager003.github.io/assets/85725033/b11a3ad6-cdcc-4918-9852-3907ec1e4211c)
 
 ```
 // applicaiton.yml 3.2 이상
