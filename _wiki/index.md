@@ -3,7 +3,7 @@ layout  : wiki
 title   : Wiki
 summary : 
 date    : 2023-01-09 15:24:31 +0900
-updated : 2023-12-11 09:37:33 +0900
+updated : 2023-12-12 23:25:10 +0900
 tag     : 
 resource: 38/1839B7-F38A-4961-B680-EEA4A250632E
 toc     : true
@@ -46,6 +46,7 @@ comment : false
 * [[/java/java_io]]
 * [[/java/java_generic]]
 * [[/java/lambda]]
+* [[/java/jdk_21_virtual_thread]]
  
 ### Effective Java
 * [[/java/effective_item1]]
