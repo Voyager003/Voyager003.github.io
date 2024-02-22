@@ -1,0 +1,10 @@
+{
+ "type": "wiki",
+ "title": "복구할 수 있는 상황에는 검사 예외를, 프로그래밍 오류에는 런타임 예외를 사용하라",
+ "summary": "",
+ "parent": "java",
+ "url": "/wiki/java/effective_item70",
+ "updated": "2024-02-22 11:32:53 +0900",
+ "resource": "07/818D2E-01F9-4AC6-8C8E-ECD1943D2949",
+ "children": []
+}
