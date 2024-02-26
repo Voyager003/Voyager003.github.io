@@ -3,7 +3,7 @@ layout  : category
 title   : 책읽자
 summary : 
 date    : 2023-01-26 23:47:18 +0900
-updated : 2024-02-18 23:00:50 +0900
+updated : 2024-02-26 23:32:03 +0900
 tag     : reading
 resource: F5/D65F08-17B4-4031-A23B-765161F9349A
 toc     : true
@@ -113,6 +113,7 @@ latex   : false
 - [ ] 일본의 굴레 - 태가트 머피
 - [ ] 나는 나를 파괴할 권리가 있다 - 김영하
 - [ ] 죽은 자의 집 청소 - 김완
+
 --- 
 
 # 독서 리뷰
