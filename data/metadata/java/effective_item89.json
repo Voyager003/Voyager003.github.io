@@ -1,0 +1,10 @@
+{
+ "type": "wiki",
+ "title": "인스턴스 수를 통제해야 한다면 readResolve보다는 열거 타입을 사용하라",
+ "summary": "",
+ "parent": "java",
+ "url": "/wiki/java/effective_item89",
+ "updated": "2024-06-10 14:42:21 +0900",
+ "resource": "1B/238E95-6672-4D4E-BB12-ECF829671E38",
+ "children": []
+}
