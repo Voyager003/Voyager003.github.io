@@ -3,7 +3,7 @@ layout  : wiki
 title   : Wiki
 summary : 
 date    : 2023-01-09 15:24:31 +0900
-updated : 2024-06-10 11:07:50 +0900
+updated : 2024-06-14 21:29:42 +0900
 tag     : 
 resource: 38/1839B7-F38A-4961-B680-EEA4A250632E
 toc     : true
@@ -139,6 +139,8 @@ comment : false
 * [[/java/effective_item88]] 
 * [[/java/effective_item89]] 
 
+## Modenr Java in action
+* [[/java/modernjava_in_action_ch02]]
 
 ## [[Spring]]
 * [[/Spring/Spring-mvc]]
