@@ -3,7 +3,7 @@ layout  : wiki
 title   : Wiki
 summary : 
 date    : 2023-01-09 15:24:31 +0900
-updated : 2024-07-26 22:58:21 +0900
+updated : 2024-07-28 21:49:28 +0900
 tag     : 
 resource: 38/1839B7-F38A-4961-B680-EEA4A250632E
 toc     : true
@@ -219,6 +219,7 @@ comment : false
 * [[/Reading/24_06_02]]
 * [[/Reading/24_06_19]]
 * [[/Reading/24_07_07]]
+* [[/Reading/24_07_28]]
 
 ## [[terminology]]
 * [[/terminology/build-cicd]]
